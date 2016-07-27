@@ -365,7 +365,7 @@ blockquote::after{
 }
 
 .pricing {
-	background: url('../img/bg-pricing.png') 50%;
+	background: url('../img/bg-pricing.png') 50% 49%;
 	background-color: #ececec;
 	background-size: cover;
 }
@@ -433,20 +433,26 @@ blockquote::after{
 	text-transform: uppercase;
 }
 
-.our__clients__main {
+.our__clients {
+	background-color: #fbfbfb;
+}
+
+.our__clients__logo {
 	margin: 0 auto;
 	padding-top: 116px;
 }
 
-.our__clients__main div {
+.our__clients__logo div {
 	float: left;
 	border: 1px solid #ececec;
-    width: 24%;
-    display: block;
-    overflow: hidden;
-    text-align: center;
+	background: #ffffff;
+    width: 24.8%;
+    height: 240px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
-
 
 .contact__us {
 	background: url('../img/bg-pricing.png') 50%;
@@ -487,6 +493,7 @@ blockquote::after{
 }
 	
 .contact__us__form input {
+	margin: 0 10px;
 	padding: 20px;
 	color: white;
 	font-family: Raleway;
@@ -495,6 +502,44 @@ blockquote::after{
 	text-transform: uppercase;
 	border: 3px solid white;
 }
+
+
+.contact__us__form textarea {
+	margin-top: 16px;
+	width: 37.1%;
+	padding: 20px;
+	height: 220px;
+	border: 3px solid white;
+	color: white;
+	font-family: Raleway;
+	font-size: 14px;
+	font-weight: 700;
+}
+
+.contact__us__button {
+	margin-top: 11px;
+    margin-right: 26.2%;
+    padding: 20px 52px;
+    background-color: #f4c60b;
+}
+
+.contact__us__button a {
+	font-family: Raleway;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #000;
+}
+
+input::-webkit-input-placeholder       {text-indent: 0px;   transition: text-indent 0.3s ease; color: #fff}
+input::-moz-placeholder                {text-indent: 0px;   transition: text-indent 0.3s ease; color: #fff}
+input:-moz-placeholder                 {text-indent: 0px;   transition: text-indent 0.3s ease; color: #fff}
+input:-ms-input-placeholder            {text-indent: 0px;   transition: text-indent 0.3s ease; color: #fff}
+input:focus::-webkit-input-placeholder {text-indent: 500px; transition: text-indent 0.3s ease; color: #fff}
+input:focus::-moz-placeholder          {text-indent: 500px; transition: text-indent 0.3s ease; color: #fff}
+input:focus:-moz-placeholder           {text-indent: 500px; transition: text-indent 0.3s ease; color: #fff}
+input:focus:-ms-input-placeholder      {text-indent: 500px; transition: text-indent 0.3s ease; color: #fff}
+
 
 .footer {
 	background-color: #303030;	
