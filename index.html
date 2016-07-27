@@ -25,24 +25,14 @@
  
             $("#owl-example").owlCarousel({
               autoPlay : true,
-              stopOnHover : false,
-              navigation : true,
+              stopOnHover : true,
               rewindNav : true,
-              autoHeight : true,
+              autoHeight : false,
               slideSpeed : 400,
               paginationSpeed : 1000,
               rewindSpeed : 1000,
-
-              items : 12,
-              itemsCustom : false,
-              itemsDesktop : [1920,4],
-              itemsDesktopSmall : [980,3],
-              itemsTablet: [768,2],
-              itemsTabletSmall: false,
-              itemsMobile : [479,1],
-              singleItem : false,
-              itemsScaleUp : true,
-              });
+              singleItem: true,
+          	});
            
           });
         </script>
@@ -50,7 +40,20 @@
 	<body>
 		<section class="wrap">
 			<header class="header">
-			<div class="header__top">
+			<div class="header__top">		
+				<div id="owl-example" class="owl-carousel">
+		            <div>
+		               <img src="img/main_fon.png">
+		            </div>
+		            <div>
+		               <img src="img/main_fon.png" alt="">
+		            </div>
+		            <div>
+		               <img src="img/main_fon.png" alt="">
+		            </div>
+        		</div>
+
+
 				<img class="header__logo" src="png/logo.png" alt="logo_not_foud">
 				<nav class="menu">
 					<a href="#" class="menu__item">Home</a>
@@ -67,10 +70,7 @@
 					<img class="header__scroll--img" src="png/mouse-icon.png" alt="img_not_found">
 					<p class="header__scroll--description">Scroll down</p>
 				</div>
-				<div id="owl-example" class="owl-carousel">
-					<div>					
-					</div>
-				</div>
+
 			</div>
 	    	</header>
 		</section>
