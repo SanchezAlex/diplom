@@ -4,6 +4,7 @@
 	    <meta charset="UTF-8">
 	    <title>Carpathian</title>
 	    <link rel="stylesheet" href="css/reset.css">
+	    <link rel="stylesheet" href="">
 	    <link rel="stylesheet" href="css/base.css">
 	    <link href='https://fonts.googleapis.com/css?family=Raleway:300,400,700' rel='stylesheet' type='text/css'>
 		<link href='https://fonts.googleapis.com/css?family=Crimson+Text:400,400italic' rel='stylesheet' type='text/css'>	
@@ -32,45 +33,61 @@
               paginationSpeed : 1000,
               rewindSpeed : 1000,
               singleItem: true,
+              // responsiveBaseWidth: window,
           	});
            
           });
         </script>
 		</head>
 	<body>
-		<section class="wrap">
-			<header class="header">
+		<section class="header">
+			<header class="header__bg">
 			<div class="header__top">		
 				<div id="owl-example" class="owl-carousel">
 		            <div>
-		               <img src="img/main_fon.png">
+		               <img src="img/main_fon.png" alt="img_not_found">
 		            </div>
 		            <div>
-		               <img src="img/main_fon.png" alt="">
+		               <img src="img/main_fon.png" alt="img_not_found">
 		            </div>
 		            <div>
-		               <img src="img/main_fon.png" alt="">
+		               <img src="img/main_fon.png" alt="img_not_found">
+		            </div>
+		            <div>
+		               <img src="img/main_fon.png" alt="img_not_found">
 		            </div>
         		</div>
 
-
-				<img class="header__logo" src="png/logo.png" alt="logo_not_foud">
-				<nav class="menu">
-					<a href="#" class="menu__item">Home</a>
-					<a href="#" class="menu__item">About us</a>
-					<a href="#" class="menu__item">Portfolio</a>
-					<a href="#" class="menu__item">Blog</a>
-					<a href="#" class="menu__item menu__item--last">Contacts</a>
-				</nav>
+				<div class="header__logo__nav">
+					<a href="#">	
+						<img class="header__logo" src="png/logo.png" alt="logo_not_foud">
+					</a>
+					<nav class="menu">
+						<a href="#" class="menu__item">Home</a>
+						<a href="#" class="menu__item">About us</a>
+						<a href="#" class="menu__item">Portfolio</a>
+						<a href="#" class="menu__item">Blog</a>
+						<a href="#" class="menu__item menu__item--last">Contacts</a>
+					</nav>
+				<!-- </div> -->
 				<div class="header__text">
 					<p class="header__title">Carpathian</p>
 					<p class="header__description">graphic design studio</p>
 				</div>
 				<div class="header__scroll">
-					<img class="header__scroll--img" src="png/mouse-icon.png" alt="img_not_found">
+					<ul id="scene">
+  						<li class="layer" data-depth="2.00">
+					    	<svg version="1.1"
+					    	     width="29px" height="67px" viewBox="30.5 -9.5 554 813" enable-background="new 30.5 -9.5 554 813" xml:space="preserve">
+			      				<path d="M328,0h-44C271.68,0,42,5.28,42,242v308c0,9.9,3.96,242,242,242h44c13.86,0,242-6.16,242-242V242C570,232.1,566.04,0,328,0z
+			            		M526,550c0,191.62-177.76,198-198,198h-44C92.38,748,86,570.24,86,550V242C86,50.82,263.54,44,284,44h44
+			            		c191.62,0,198,177.76,198,198V550z"/>
+      							<circle cx="306" cy="231" r="45"/>
+						    </svg>
+						  </li>
+						</ul>
 					<p class="header__scroll--description">Scroll down</p>
 				</div>
-
 			</div>
 	    	</header>
 		</section>
@@ -108,30 +125,46 @@
 				</nav>
 				<div class="portfolio__gallery">
 					<ul class="clearfix">
-						<li class="portfolio__gallery--item">
-							<img src="img/portfolio_1.jpg" alt="img_not_found">
-						</li>
-						<li class="portfolio__gallery--item">
-							<img src="img/portfolio_2.jpg" alt="img_not_found">
-						</li>
-						<li class="portfolio__gallery--item">
-							<img src="img/portfolio_3.jpg" alt="img_not_found">
-						</li>
-						<li class="portfolio__gallery--item">
-							<img src="img/portfolio_4.jpg" alt="img_not_found">
-						</li>
-						<li class="portfolio__gallery--item">
-							<img src="img/portfolio_5.jpg" alt="img_not_found">
-						</li>
-						<li class="portfolio__gallery--item">
-							<img src="img/portfolio_6.jpg" alt="img_not_found">
-						</li>
-						<li class="portfolio__gallery--item">
-							<img src="img/portfolio_7.jpg" alt="img_not_found">
-						</li>
-						<li class="portfolio__gallery--item">
-							<img src="img/portfolio_8.jpg" alt="img_not_found">
-						</li>
+						<a href="#">
+							<li class="portfolio__gallery--item">
+								<img src="img/portfolio_1.jpg" alt="img_not_found">
+							</li>
+						</a>
+						<a href="#">
+							<li class="portfolio__gallery--item">
+								<img src="img/portfolio_2.jpg" alt="img_not_found">
+							</li>
+						</a>
+						<a href="#">
+							<li class="portfolio__gallery--item">
+								<img src="img/portfolio_3.jpg" alt="img_not_found">
+							</li>
+						</a>
+						<a href="#">
+							<li class="portfolio__gallery--item">
+								<img src="img/portfolio_4.jpg" alt="img_not_found">
+							</li>
+						</a>
+						<a href="#">
+							<li class="portfolio__gallery--item">
+								<img src="img/portfolio_5.jpg" alt="img_not_found">
+							</li>
+						</a>
+						<a href="#">
+							<li class="portfolio__gallery--item">
+								<img src="img/portfolio_6.jpg" alt="img_not_found">
+							</li>
+						</a>
+						<a href="#">
+							<li class="portfolio__gallery--item">
+								<img src="img/portfolio_7.jpg" alt="img_not_found">
+							</li>
+						</a>
+						<a href="#">
+							<li class="portfolio__gallery--item">
+								<img src="img/portfolio_8.jpg" alt="img_not_found">
+							</li>
+						</a>
 					</ul>
 				</div>
 			</div>
@@ -379,7 +412,7 @@
 					<a href="#">
 						<img src="png/facebook.png" alt="img_not_found">
 					</a>
-					<a href="">
+					<a href="#">
 						<img src="png/twitter.png" alt="img_not_found">
 					</a>
 				</div>
