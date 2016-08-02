@@ -537,7 +537,7 @@ blockquote::after{
 }
 	
 .contact__us__form input {
-	width: 21.1%;
+	width: 18.8%;
 	margin: 0 10px;
 	padding: 20px;
 	color: white;
@@ -551,7 +551,7 @@ blockquote::after{
 
 .contact__us__form textarea {
 	margin-top: 16px;
-	width: 49%;
+	width: 44.5%;
 	padding: 20px;
 	height: 220px;
 	border: 3px solid white;
@@ -563,7 +563,7 @@ blockquote::after{
 
 .contact__us__button {
 	margin-top: 11px;
-    margin-right: 38%;
+    margin-right: 33.4%;
     padding: 20px 52px;
     background-color: #f4c60b;
 }
