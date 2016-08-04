@@ -167,6 +167,7 @@ h1 {
 	padding-top: 92px;
 	padding-bottom: 119px;
 	text-align: center;
+	position: relative;
 }
 .btn:nth-of-type(2) {
 	padding: 61px 0;
@@ -179,7 +180,14 @@ h1 {
 	font-size: 24px;
 	font-weight: 700;
 	text-transform: uppercase;
+	position: relative;
 }
+
+.btn__text:hover {
+	background: #E1D356;
+	color: #FFF;
+}
+
 .portfolio__description {
 	text-align: center;
 	padding-top: 37px;
@@ -308,9 +316,11 @@ h1 {
     color: #fff;
     text-align: center;
     position: relative;
-    top: 50%;
-    font-size: 17px;
-    padding: 10px;
+    top: 40%;
+    font-family: Crimson;
+	font-size: 24px;
+	font-weight: 700;
+    padding: 20px;
     background: rgba(0, 0, 0, 0.8);
     margin: 20px 0 0 0;
 }
@@ -332,15 +342,16 @@ h1 {
 }
 
 .view p {
-    font-family: Georgia, serif;
-    font-style: italic;
-    font-size: 12px;
+    font-family: Raleway;
+	font-size: 18px;
+	font-weight: 300;
+	font-style: italic;
     position: relative;
     color: #fff;
     padding: 10px 20px 20px;
     text-align: center;
-    top: 33%;
-    line-height: 1.7;
+    top: 20%;
+    line-height: 1.4;
 }
 
 .view img {
