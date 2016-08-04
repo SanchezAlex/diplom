@@ -576,6 +576,9 @@ blockquote::after{
 	border: 1px solid #fff;
 	text-align: center;
 }
+.pricing__main li:hover {
+	background: rgba(161, 161, 161, 0.48)
+}
 
 .pricing__main--header {
 	padding: 24px;
