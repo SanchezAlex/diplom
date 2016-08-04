@@ -226,7 +226,13 @@ h1 {
    -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=100)";
    filter: alpha(opacity=100);
    opacity: 1;
-   width: 100%;
+   width: 100%;.view-first img {
+    -webkit-transition: all 0.2s linear;
+    -moz-transition: all 0.2s linear;
+    -o-transition: all 0.2s linear;
+    -ms-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+}
    height: 100%;
 }
 
@@ -361,7 +367,7 @@ h1 {
 	float: left;
 	padding: 0 30px;
 }
-.our__team__gallery h2 {
+.our__team__gallery h3 {
 	color: #000;
 	font-family: Raleway;
 	font-size: 24px;
@@ -369,7 +375,7 @@ h1 {
 	text-transform: uppercase;
 	padding-top: 42px;
 }
-.our__team__gallery p {
+.our__team__gallery span {
 	color: #000;
 	font-family: Raleway;
 	font-size: 18px;
