@@ -186,7 +186,6 @@ h1 {
 .btn__text:hover {
 	background: rgba(158, 158, 158, 0.2);
 	color: #000;
-	-webkit-text-stroke: 2px #f4c60b;
 }
 
 .portfolio__description {
@@ -631,6 +630,37 @@ blockquote::after{
 	font-weight: 700;
 	text-transform: uppercase;
 }
+
+
+
+.carousel-wrap {
+  margin: 90px auto;
+  padding: 0 5%;
+  width: 80%;
+  position: relative;
+}
+.owl-carousel .item {
+	max-width: 100%;
+  position: relative; /* fix blank or flashing items on carousel */
+  z-index: 100; /* fix blank or flashing items on carousel */
+  -webkit-backface-visibility: hidden; /* fix blank or flashing items on carousel */
+}
+.owl-nav > div {
+  margin-top: -26px;
+  position: absolute;
+  top: 50%;
+  color: #cdcbcd;
+}
+.owl-nav i {
+  font-size: 52px;
+}
+.owl-nav .owl-prev {
+  left: -30px;
+}
+.owl-nav .owl-next {
+  right: -30px;
+}
+
 
 .our__clients {
 	background-color: #fbfbfb;

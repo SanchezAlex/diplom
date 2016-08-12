@@ -11,15 +11,12 @@
 		<link rel="stylesheet" href="owl-carousel/owl.carousel.css">
         
 
-        <!-- Default Theme -->
         <link rel="stylesheet" href="owl-carousel/owl.theme.css">
         
-        <!--  jQuery 1.7+  -->
         <script src="owl-carousel/jquery-1.9.1.min.js"></script>
 
         <script src="js/easyPieChart.js" type="text/javascript" charset="utf-8" async defer></script>
          
-        <!-- Include js plugin -->
         <script src="owl-carousel/owl.carousel.min.js"></script>
         <script>
             $(document).ready(function() {
@@ -29,14 +26,27 @@
               stopOnHover : true,
               rewindNav : true,
               autoHeight : false,
-              slideSpeed : 400,
+              slideSpeed : 500,
               paginationSpeed : 1000,
               rewindSpeed : 1000,
-              singleItem: true,
-              // responsiveBaseWidth: window,
+              singleItem: true
           	});
-           
-          });
+
+		  	$(".owl-carousel").owlCarousel({
+			    loop: true,
+			    center: true,
+			    margin: 30,
+			    stagePadding: 20,
+			    nav: true,
+			  	navText: [
+			    	"<i class='fa fa-caret-left'></i>",
+			    	"<i class='fa fa-caret-right'></i>"
+			  		],
+			  	autoplay: true,
+			  	autoplayHoverPause: true, 
+
+				})
+           });
         </script>
 		</head>
 	<body>
@@ -58,7 +68,7 @@
 		            </div>
         		</div>
 				<a href="#">	
-					<img class="header__logo" src="png/logo.png" alt="logo_not_foud">
+					<img class="header__logo" src="pic/logo.png" alt="logo_not_foud">
 				</a>
 				<nav class="menu">
 					<a href="#" class="menu__item">Home</a>
@@ -351,7 +361,23 @@
 				<div class="title__h1">
 					<h1>From blog</h1>
 				</div>
-
+				<div class="carousel-wrap">
+  <div class="owl-carousel">
+    <div class="item"><img src="http://placehold.it/150x150"></div>
+    <div class="item"><img src="http://placehold.it/150x150"></div>
+    <div class="item"><img src="http://placehold.it/150x150"></div>
+    <div class="item"><img src="http://placehold.it/150x150"></div>
+    <div class="item"><img src="http://placehold.it/150x150"></div>
+    <div class="item"><img src="http://placehold.it/150x150"></div>
+    <div class="item"><img src="http://placehold.it/150x150"></div>
+    <div class="item"><img src="http://placehold.it/150x150"></div>
+    <div class="item"><img src="http://placehold.it/150x150"></div>
+    <div class="item"><img src="http://placehold.it/150x150"></div>
+    <div class="item"><img src="http://placehold.it/150x150"></div>
+    <div class="item"><img src="http://placehold.it/150x150"></div>
+  </div>
+</div>
+	
 			</div>
 		</section>
 		<section class="our__clients">
@@ -365,42 +391,42 @@
 				<div class="our__clients__logo clearfix">
 					<a href="#apple">
 						<div>
-							<img title="Apple" src="png/apple.png" alt="img_not_found">
+							<img title="Apple" src="pic/apple.png" alt="img_not_found">
 						</div>
 					</a>
 					<a href="#vogue">
 						<div>
-							<img src="png/vogue.png" alt="img_not_found">
+							<img src="pic/vogue.png" alt="img_not_found">
 						</div>
 					</a>
 					<a href="#starbucks">
 						<div>
-							<img src="png/starbucks.png" alt="img_not_found">
+							<img src="pic/starbucks.png" alt="img_not_found">
 						</div>
 					</a>
 					<a href="#nivea">
 						<div>				
-							<img src="png/nivea.png" alt="img_not_found">
+							<img src="pic/nivea.png" alt="img_not_found">
 						</div>
 					</a>
 					<a href="#chanel">
 						<div>				
-							<img src="png/chanel.png" alt="img_not_found">
+							<img src="pic/chanel.png" alt="img_not_found">
 						</div>
 					</a>
 					<a href="#microsoft">
 						<div>				
-							<img src="png/microsoft.png" alt="img_not_found">
+							<img src="pic/microsoft.png" alt="img_not_found">
 						</div>
 					</a>
 					<a href="#nintendo">
 						<div>				
-							<img src="png/nintendo.png" alt="img_not_found">
+							<img src="pic/nintendo.png" alt="img_not_found">
 						</div>
 					</a>
 					<a href="#gq">
 						<div>				
-							<img src="png/gq.png" alt="img_not_found">
+							<img src="pic/gq.png" alt="img_not_found">
 						</div>
 					</a>
 				</div>
@@ -428,7 +454,7 @@
 		<section class="footer">
 			<div class="container">
 				<div class="footer__logo">
-					<img src="png/logo.png" alt="img_not_found">
+					<img src="pic/logo.png" alt="img_not_found">
 				</div>
 				<h4 class="footer__title">Carpatian</h4>
 				<p class="footer__description">
@@ -436,13 +462,13 @@
 				</p>
 				<div class="footer__social">
 					<a href="#">	
-						<img src="png/google.png" alt="img_not_found">
+						<img src="pic/google.png" alt="img_not_found">
 					</a>
 					<a href="#">
-						<img src="png/facebook.png" alt="img_not_found">
+						<img src="pic/facebook.png" alt="img_not_found">
 					</a>
 					<a href="#">
-						<img src="png/twitter.png" alt="img_not_found">
+						<img src="pic/twitter.png" alt="img_not_found">
 					</a>
 				</div>
 				<div class="footer__copyright">
