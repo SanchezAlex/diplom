@@ -184,7 +184,7 @@ h1 {
 }
 
 .btn__text:hover {
-	background: rgba(158, 158, 158, 0.2);
+	background: rgba(244, 198, 11, 0.75);
 	color: #000;
 }
 
@@ -208,8 +208,17 @@ h1 {
 	font-size: 14px;
 	font-weight: 300;
 	text-transform: uppercase;
-	border: 1px solid #f4c60b;
+	border-left: 1px solid #f4c60b;
+	border-top: 1px solid #f4c60b;
+	border-bottom: 1px solid #f4c60b;
 	padding: 20px 25px;
+	margin: 0 -2.2px;
+}
+.portfolio__sorted button:last-child {
+	border-right: 1px solid #f4c60b;
+}
+.portfolio__sorted button:hover {
+	background-color: #f4c60b;
 }
 .portfolio__gallery {
 	padding-top: 60px;
@@ -234,13 +243,14 @@ h1 {
    -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=100)";
    filter: alpha(opacity=100);
    opacity: 1;
-   width: 100%;.view-first img {
-    -webkit-transition: all 0.2s linear;
-    -moz-transition: all 0.2s linear;
-    -o-transition: all 0.2s linear;
-    -ms-transition: all 0.2s linear;
-    transition: all 0.2s linear;
-}
+   width: 100%;
+    .view-first img {
+        -webkit-transition: all 0.2s linear;
+        -moz-transition: all 0.2s linear;
+        -o-transition: all 0.2s linear;
+        -ms-transition: all 0.2s linear;
+        transition: all 0.2s linear;
+    }
    height: 100%;
 }
 
@@ -577,8 +587,8 @@ blockquote::after{
 	text-align: center;
 }
 .pricing__main li:hover {
-	background-color: rgba(161, 161, 161, 0.48);
-	text-shadow: 2px 3px 3px rgba(244, 198, 11, 0.8);
+	background-color: rgba(244, 198, 11, 0.7);
+	text-shadow: 2px 3px 3px rgba(255, 255, 255, 8);
 }
 
 .pricing__main--header {
