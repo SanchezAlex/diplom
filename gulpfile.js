@@ -107,5 +107,5 @@ gulp.task('clean', function() {
     return gulp.src('./public', { read: false }).pipe(clean());
 });
 
-gulp.task('default', ['server']);
+// gulp.task('default', ['server']);
 gulp.task('production', ['minify-css', 'minify-js', 'minify-image', 'minify-html']);

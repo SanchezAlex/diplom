@@ -212,7 +212,7 @@ h1 {
 	border-top: 1px solid #f4c60b;
 	border-bottom: 1px solid #f4c60b;
 	padding: 20px 25px;
-	margin: 0 -2.2px;
+	margin: 0 -3px;
 }
 .portfolio__sorted button:last-child {
 	border-right: 1px solid #f4c60b;
@@ -589,6 +589,7 @@ blockquote::after{
 .pricing__main li:hover {
 	background-color: rgba(244, 198, 11, 0.7);
 	text-shadow: 2px 3px 3px rgba(255, 255, 255, 8);
+	cursor: pointer;
 }
 
 .pricing__main--header {
@@ -641,36 +642,110 @@ blockquote::after{
 	text-transform: uppercase;
 }
 
-
-
-.carousel-wrap {
-  margin: 90px auto;
-  padding: 0 5%;
-  width: 80%;
-  position: relative;
-}
-.owl-carousel .item {
-	max-width: 100%;
-  position: relative; /* fix blank or flashing items on carousel */
-  z-index: 100; /* fix blank or flashing items on carousel */
-  -webkit-backface-visibility: hidden; /* fix blank or flashing items on carousel */
-}
-.owl-nav > div {
-  margin-top: -26px;
-  position: absolute;
-  top: 50%;
-  color: #cdcbcd;
-}
-.owl-nav i {
-  font-size: 52px;
-}
-.owl-nav .owl-prev {
-  left: -30px;
-}
-.owl-nav .owl-next {
-  right: -30px;
+#owl-demo .owl-wrapper-outer {
+	padding: 84px 0 122px;
 }
 
+#owl-demo img {
+	position: relative;
+	width: auto;
+}
+
+.from__blog--item {
+	margin: 0 30px;
+	display: block;
+	/*position: relative;*/
+}
+
+.item__frame {
+	position: absolute;
+	top: -6px;
+	left: 40px;
+}
+.item {
+	display: block;
+	/*height: auto;*/
+}
+.item__description {
+	display: flex;
+	position: absolute;
+	top: 0;
+	left: 46px;
+	right: 46px;
+	bottom: 0;
+	background-color: rgba(0, 0, 0, 0.5);
+	color: #FFFFFF;
+}
+
+.item__description h5 {
+	padding: 37px 75px 0 14px;
+	color: white;
+	font-family: Raleway;
+	font-size: 18px;
+	font-weight: 700;
+	text-transform: uppercase;
+	text-align: justify;
+}
+
+.item__description--date {
+	position: absolute;
+	width: 16.72%;
+	top: 15px;
+	right: 20px;
+	color: white;
+	font-family: Raleway;
+	text-transform: uppercase;
+	line-height: 26px;
+}
+
+.digit {
+	font-size: 36px;
+	font-weight: 700;
+}
+
+.month {
+	font-size: 14px;
+	font-weight: 300;
+}
+
+.item__description p {
+	position: absolute;
+	bottom: 22px;
+	left: 15px;
+	right: 15px;
+	color: white;
+	font-family: Raleway;
+	font-size: 12px;
+	font-weight: 400;
+	line-height: 17px;
+	text-align: left;
+}
+
+#owl-demo .owl-pagination {
+	display: none;
+}
+
+.owl-buttons{
+	position: relative;
+
+}
+.owl-prev {
+	position: absolute;
+	left: -9%;
+	top: -330px;
+}
+
+.owl-next {
+	position: absolute;
+	right: -9%;
+	top: -330px;
+}
+
+/*.owl-prev {*/
+	/*position: absolute;*/
+	/*top: 232px;*/
+	/*left: -67px;*/
+/*}*/
 
 .our__clients {
 	background-color: #fbfbfb;
