@@ -185,7 +185,7 @@ h1 {
 
 .btn__text:hover {
 	background: rgba(244, 198, 11, 0.75);
-	color: #000;
+	color: #fff;
 }
 
 .portfolio__description {
@@ -270,7 +270,7 @@ h1 {
    -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=0)";
    filter: alpha(opacity=0);
    opacity: 0;
-   background-color: rgba(219,127,8, 0.7);
+   background-color: rgba(244, 198, 11, 0.4);
    -webkit-transition: all 0.4s ease-in-out;
    -moz-transition: all 0.4s ease-in-out;
    -o-transition: all 0.4s ease-in-out;
@@ -740,12 +740,6 @@ blockquote::after{
 	right: -9%;
 	top: -330px;
 }
-
-/*.owl-prev {*/
-	/*position: absolute;*/
-	/*top: 232px;*/
-	/*left: -67px;*/
-/*}*/
 
 .our__clients {
 	background-color: #fbfbfb;
