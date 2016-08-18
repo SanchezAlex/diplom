@@ -181,7 +181,7 @@ h1 {
 .btn:nth-of-type(2) {
 	padding: 61px 0;
 }
-.btn__text {
+.btn__text a{
 	padding: 27px 60px;
 	border: 3px solid #f4c60b;
 	color: black;
@@ -192,7 +192,7 @@ h1 {
 	position: relative;
 }
 
-.btn__text:hover {
+.btn__text a:hover {
 	background: rgba(244, 198, 11, 0.75);
 	color: #fff;
 }
@@ -911,13 +911,23 @@ input:focus:-ms-input-placeholder      {text-indent: 500px; transition: text-ind
 	display: block;
 	position: relative;
 }
-.scrollToTop{
+.scrollToTop {
 	width:100px;
 	height:100px;
 	position:absolute;
 	bottom:30px;
 	right:0;
 	background: url('../pic/top.png') no-repeat 21px 31px;
+	color: #fff;
+	font-family: Raleway;
+	font-size: 16px;
+	font-weight: 700;
+}
+.scrollToTop span {
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 7px;
 }
 
 /* @media screen and (max-width: 768px) {
