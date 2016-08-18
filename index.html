@@ -18,28 +18,28 @@
             $("#owl-example").owlCarousel({
                 autoPlay : true,
 				loop: true,
-                stopOnHover : true,
-                rewindNav : true,
-                autoHeight : false,
-                slideSpeed : 500,
-                paginationSpeed : 1000,
-                rewindSpeed : 1000,
+                stopOnHover: true,
+                rewindNav: true,
+                autoHeight: false,
+                slideSpeed: 500,
+                paginationSpeed: 1000,
+                rewindSpeed: 1000,
                 singleItem: true
           	});
 
 			$("#owl-demo").owlCarousel({
-				autoPlay : true,
+				autoPlay: true,
 				stopOnHover: true,
 				loop: true,
 			    center: true,
 			    navigation: true,
-				navigationText : [
+				navigationText: [
 					"<img	src='pic/left.png'>",
 					"<img	src='pic/right.png'>"
 					],
-				items : 3,
-				itemsDesktop : [1199,3],
-				itemsDesktopSmall : [979,2]
+				items: 3,
+				itemsDesktop: [1199,3],
+				itemsDesktopSmall: [979,2]
 
 			});
 			});
@@ -52,6 +52,25 @@
 							top = $(id).offset().top;
 					$('body,html').animate({scrollTop: top}, 1500);
 				});
+			});
+
+			$(document).ready(function(){
+
+				//Check to see if the window is top if not then display button
+				$(window).scroll(function(){
+					if ($(this).scrollTop() ) {
+						$('.scrollToTop').fadeIn();
+					} else {
+						$('.scrollToTop').fadeOut();
+					}
+				});
+
+				//Click event to scroll to top
+				$('.scrollToTop').click(function(){
+					$('html, body').animate({scrollTop : 0},800);
+					return false;
+				});
+
 			});
 		</script>
 	</head>
@@ -572,6 +591,9 @@
 				</div>
 				<div class="footer__copyright">
 					<p>Carphatian © 2016. <a href="#">All rights reserved.</a></p>
+				</div>
+				<div class="scroll__to__top">
+					<a href="#" class="scrollToTop"></a>
 				</div>
 			</div>
 		</section>

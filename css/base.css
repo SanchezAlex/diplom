@@ -677,6 +677,11 @@ blockquote::after{
 	color: #FFFFFF;
 }
 
+.item__description:hover {
+	background: rgba(0, 0, 0, 0.2);
+	cursor: pointer;
+}
+
 .item__description h5 {
 	padding: 37px 75px 0 14px;
 	color: white;
@@ -891,6 +896,19 @@ input:focus:-ms-input-placeholder      {text-indent: 500px; transition: text-ind
 	font-family: CrimsonText;
 	font-size: 12px;
 	font-style: italic;
+}
+
+.scroll__to__top {
+	display: block;
+	position: relative;
+}
+.scrollToTop{
+	width:100px;
+	height:100px;
+	position:absolute;
+	bottom:30px;
+	right:0;
+	background: url('../pic/top.png') no-repeat 21px 31px;
 }
 
 /* @media screen and (max-width: 768px) {
