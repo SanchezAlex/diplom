@@ -4,16 +4,25 @@
 	display: table;
 	overflow: hidden;
 }
+
 .container {
 	max-width: 1020px;
 	margin: 0 auto;
 	text-align: center; 
 }
+
 .header {
 	position: relative;
 }
+
 .header__bg {
     background-color: #000;
+}
+
+.header__top {
+	margin: 0 auto;
+	padding: 0;
+	display: block;
 }
 
 .owl-pagination {
@@ -29,24 +38,20 @@
 	margin: 0 5px 29px;
 }
 
-.header__top {
-	margin: 0 auto;
-	padding: 0;
-	display: block;
-}
 .header__logo {
+	display: block;
 	position: absolute;
-	top: 30px;
+	top: 3.34%;
 	left: 13%;	
 }
-.header__logo__nav {
-	display: flex;
-}
+
 .menu {
+	display: inline-block;
 	position: absolute;
-    top: 48px;
+    top: 5.34%;
     right: 15.437%;
 }
+
 .menu__item {
 	color: white;
 	font-family: Raleway;
@@ -55,6 +60,7 @@
 	text-transform: uppercase;
 	padding-right: 26px;
 }
+
 .menu__item:after {
 	content: '';
 	width: 5px;
@@ -69,15 +75,18 @@
 }
 .menu a:last-child {
 	padding: 0;
-} 
+}
+
 .header__text {
-	text-align: center;
 	position: absolute;
     top: 50%;
     left: 0;
 	right: 0;
 	transform: translate(0,-50%);
+	line-height: 1.1;
+	text-align: center;
 }
+
 .header__title {
 	color: #f4c60b;
 	font-family: Raleway;
@@ -92,13 +101,13 @@
 	font-style: italic;
 }
 .header__scroll {
-	text-align: center;
+	display: block;
 	position: absolute;
-	/*bottom: 2%;*/
-	top: 86%;
+	bottom: 9%;
 	left: 0;
 	right: 0;
-	transform: translate(0,-50%);
+	transform: translate(0,-17%);
+	text-align: center;
 }
 
 svg {
@@ -131,14 +140,7 @@ circle {
 	font-weight: 700;
 	text-transform: uppercase;
 }
-.header__scroll--point {
-	content: '';
-	width: 13px;
-	height: 13px;
-	border: 1px solid #f4c60b;
-	border-radius: 3px;
-	display: inline-block;
-}
+
 .about {
 	background: url("../img/field.png") 50%;
 	background-color: #ececec;
@@ -151,25 +153,25 @@ circle {
 	padding-top: 122px;
 }
 h1 {
-	color: black;
+	display: inline-block;
+	padding-bottom: 15px;
+	color: #000;
 	font-family: Raleway;
 	font-size: 48px;
 	font-weight: 700;
 	text-transform: uppercase;
-	text-align: center;
-    padding-bottom: 15px;
-    display: inline-block;
 }
+
 .about__text {
 	padding-top: 147px;
-	color: black;
+	color: #000;
 	font-family: CrimsonText;
 	font-size: 18px;
 	font-weight: 400;
 	line-height: 36px;
 	text-align: justify;
 }
-.about__text--center {
+.about__text p:last-child {
 	text-align: center;
 }
 .btn {
@@ -178,16 +180,16 @@ h1 {
 	text-align: center;
 	position: relative;
 }
-.btn:nth-of-type(2) {
-	padding: 61px 0;
-}
+
 .btn__text a{
+	display: block;
 	padding: 27px 60px;
 	border: 3px solid #f4c60b;
-	color: black;
+	color: #000;
 	font-family: Raleway;
 	font-size: 24px;
 	font-weight: 700;
+	transition: all 0.5s ease-out;;
 	text-transform: uppercase;
 	position: relative;
 }
@@ -201,50 +203,60 @@ h1 {
 	text-align: center;
 	padding-top: 37px;
 }
+
 .portfolio__description p {
 	color: black;
 	font-family: CrimsonText;
 	font-size: 24px;
 	font-weight: 400;
 }
+
 .portfolio__sorted {
+	display: inline-block;
 	margin: 0 auto;
 	padding-top: 52px;
 }
+
 .portfolio__sorted button {
-	color: black;
+	margin: 0 -0.5%;
+	padding: 20px 25px;
+	border-left: 1px solid #f4c60b;
+	border-top: 1px solid #f4c60b;
+	border-bottom: 1px solid #f4c60b;
+}
+
+.portfolio__sorted a {
+	color: #000;
 	font-family: Raleway;
 	font-size: 14px;
 	font-weight: 300;
 	text-transform: uppercase;
-	border-left: 1px solid #f4c60b;
-	border-top: 1px solid #f4c60b;
-	border-bottom: 1px solid #f4c60b;
-	padding: 20px 25px;
-	margin: 0 -3px;
 }
+
 .portfolio__sorted button:last-child {
 	border-right: 1px solid #f4c60b;
 }
+
 .portfolio__sorted button:hover {
 	background-color: #f4c60b;
 }
+
 .portfolio__gallery {
 	padding-top: 60px;
 }
+
 .portfolio__gallery ul {
 	list-style-type: none;
 	margin: 0 -28.44%;
 }
+
 .portfolio__gallery--item {
 	float: left;
 }
 
-
 .view {
    float: left;
    position: relative;
-   text-align: center;
    overflow: hidden;
 }
 
@@ -331,7 +343,9 @@ h1 {
 }
 
 .view h2 {
-    text-transform: uppercase;
+	margin: 20px 0 0 0;
+	padding: 20px;
+	text-transform: uppercase;
     color: #fff;
     text-align: center;
     position: relative;
@@ -339,9 +353,7 @@ h1 {
     font-family: Crimson;
 	font-size: 24px;
 	font-weight: 700;
-    padding: 20px;
-    background: rgba(0, 0, 0, 0.8);
-    margin: 20px 0 0 0;
+	    background: rgba(0, 0, 0, 0.8);
 }
 
 .view-first p {
@@ -386,17 +398,24 @@ h1 {
     transition: all 0.2s linear;
 }
 
+.btn:nth-of-type(2) {
+	padding: 61px 0;
+}
+
 .our__team__gallery {
 	padding-top: 120px;
 	padding-bottom: 140px;	
 }
+
 .our__team__gallery ul {
-	margin: 0 30px;
+	margin: 0 2.94%;
 }
+
 .our__team__gallery--foto {
 	float: left;
 	padding: 0 30px;
 }
+
 .our__team__gallery h3 {
 	color: #000;
 	font-family: Raleway;
@@ -405,28 +424,35 @@ h1 {
 	text-transform: uppercase;
 	padding-top: 42px;
 }
+
 .our__team__gallery span {
+	display: block;
+	padding-top: 29px;
 	color: #000;
 	font-family: Raleway;
 	font-size: 18px;
 	font-weight: 300;
-	padding-top: 29px;
+	line-height: 1.3;
 }
+
 .our__skills {
 	background: url("../img/bg-skills.png") 50%;
 	background-color: #ececec;
 	text-align: center;
 	background-size: cover;
 }
+
 .our__skills__block {
 	padding-top: 181px;
 }
+
 .our__skills__block ul {
-	margin: 0 30px;
+	padding: 0 2.94%;
 }
+
 .our__skills__block li {
 	float: left;
-	padding: 0 78px;
+	padding: 0 8.29%;
 }
 
 .our__skills__block  p {
@@ -469,7 +495,7 @@ h1 {
 
 .percent {
     display: inline-block;
-    margin-top: 50px;
+    padding-top: 50px;
     color: #000;
 	font-family: Raleway;
 	font-weight: 300;
@@ -490,8 +516,8 @@ h1 {
 
 blockquote {
 	display: block;
-	padding: 120px 20px 15px 45px;
-	margin: 0 -25px;
+	padding: 167px 0 0 0;
+	margin: 0 -4.3%;
 	position: relative;
 }
 
@@ -502,8 +528,8 @@ blockquote::before{
 	font-weight: bold;
 	color: #f4c60b;
   	position: absolute;
-	left: -25px;
-    top: 90px;
+	left: -2.45%;
+    top: 145px;
 }
 
 blockquote::after{
@@ -513,13 +539,13 @@ blockquote::after{
 	font-weight: bold;
 	color: #f4c60b;
   	position: absolute;
-	right: -48px;
+	right: -3%;
     bottom: -34px;
 }
 
 .quote__text {
-	margin: 0 -25px;
-	padding: 20px 0;
+	margin: 0 auto;
+	padding: 25px 18px 26px 20px;
 	color: #fff;
 	font-family: CrimsonText;
 	font-size: 34px;
@@ -527,9 +553,9 @@ blockquote::after{
 	text-align: justify;
 }
 
-.quote__signature {
-	margin: 0 -25px;
-	padding: 47px 0 117px 0;
+.quote__author {
+	margin: 0 -2.45%;
+	padding: 62px 0 117px 0;
 	color: #fff;
 	font-family: Raleway;
 	font-size: 24px;
@@ -540,18 +566,17 @@ blockquote::after{
 .services__block {
 	padding: 122px 0;
 	margin: 0 auto;
-	text-align: center;
 }
 
 .services__block ul {
-	margin: 0 -72px;
+	margin: 0 -6.1%;
 	text-align: center;
 }
 
 .services__block li {
 	float: left;
-	width: 20.96%;
-    padding: 0 72px;
+	width: 20.7%;
+    padding: 0 6.29%;
 }
 
 .services__block h3 {
@@ -584,14 +609,14 @@ blockquote::after{
 }
 
 .pricing__main {
-	margin: 0 -10px;
-    padding: 99px 140px 127px;
+	margin: 0 -0.98%;
+    padding: 99px 13.72% 127px;
 }
 
 .pricing__main li {
 	width: 30.246%;
 	float: left;
-	margin: 0 10px;
+	margin: 0 0.98%;
 	border: 1px solid #fff;
 	text-align: center;
 }
@@ -604,7 +629,7 @@ blockquote::after{
 .pricing__main--header {
 	padding: 24px;
 	background-color: #FFF;
-	/* color: #000; */
+	color: #000;
 	font-family: Raleway;
 	font-size: 18px;
 	font-weight: 300;
@@ -613,8 +638,8 @@ blockquote::after{
 }
 
 .pricing__main--price {
-	padding: 62px 72px 0;
-	/* color: #000; */
+	padding: 62px 32.72% 0;
+	color: #000;
 	font-family: Raleway;
 	font-weight: 400;
 	text-transform: uppercase;
@@ -627,8 +652,8 @@ blockquote::after{
 }
 
 .pricing__main--features {
-	padding: 76px 46px 0;
-	color: black;
+	padding: 76px 20.9% 0;
+	color: #000;
 	font-family: Raleway;
 	font-size: 18px;
 	font-weight: 300;
@@ -637,14 +662,14 @@ blockquote::after{
 
 .pricing__main--btn {
 	background-color: #FFF;
-	margin: 73px 20px 20px;
+	margin: 73px 9.09% 20px;
 	
 }
 
 .pricing__main--btn a {
 	padding: 20px 55px;
 	display: block;
-	color: black;
+	color: #000;
 	font-family: Raleway;
 	font-size: 14px;
 	font-weight: 700;
@@ -653,17 +678,20 @@ blockquote::after{
 
 #owl-demo .owl-wrapper-outer {
 	padding: 84px 0 122px;
+	float: left;
+	margin: 0 auto;
 }
 
 #owl-demo img {
 	position: relative;
 	width: auto;
+	margin: 0 auto;
 }
 
 .from__blog--item {
-	margin: 0 30px;
+	margin: 0 2.94%;
 	display: block;
-	/*position: relative;*/
+	/*float: left;*/
 }
 
 .item__frame {
@@ -855,10 +883,10 @@ blockquote::after{
     color: #000;
 }
 
-input::-webkit-input-placeholder       {text-indent: 0px;   transition: text-indent 0.3s ease; color: #fff}
-input::-moz-placeholder                {text-indent: 0px;   transition: text-indent 0.3s ease; color: #fff}
-input:-moz-placeholder                 {text-indent: 0px;   transition: text-indent 0.3s ease; color: #fff}
-input:-ms-input-placeholder            {text-indent: 0px;   transition: text-indent 0.3s ease; color: #fff}
+input::-webkit-input-placeholder       {text-indent: 0;   transition: text-indent 0.3s ease; color: #fff}
+input::-moz-placeholder                {text-indent: 0;   transition: text-indent 0.3s ease; color: #fff}
+input:-moz-placeholder                 {text-indent: 0;   transition: text-indent 0.3s ease; color: #fff}
+input:-ms-input-placeholder            {text-indent: 0;   transition: text-indent 0.3s ease; color: #fff}
 input:focus::-webkit-input-placeholder {text-indent: 500px; transition: text-indent 0.3s ease; color: #fff}
 input:focus::-moz-placeholder          {text-indent: 500px; transition: text-indent 0.3s ease; color: #fff}
 input:focus:-moz-placeholder           {text-indent: 500px; transition: text-indent 0.3s ease; color: #fff}
@@ -911,23 +939,29 @@ input:focus:-ms-input-placeholder      {text-indent: 500px; transition: text-ind
 	display: block;
 	position: relative;
 }
+
 .scrollToTop {
+    padding: 10px;
 	width:100px;
 	height:100px;
 	position:absolute;
 	bottom:30px;
 	right:0;
-	background: url('../pic/top.png') no-repeat 21px 31px;
+	background: url('../pic/top.png') no-repeat 31px 31px;
 	color: #fff;
 	font-family: Raleway;
 	font-size: 16px;
 	font-weight: 700;
+    text-decoration: none;
+}
+.scrollToTop:hover {
+    text-decoration: none;
 }
 .scrollToTop span {
 	position: absolute;
 	left: 0;
 	right: 0;
-	bottom: 7px;
+	bottom: 17px;
 }
 
 /* @media screen and (max-width: 768px) {

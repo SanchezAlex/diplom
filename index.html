@@ -28,7 +28,7 @@
           	});
 
 			$("#owl-demo").owlCarousel({
-				autoPlay: true,
+				autoPlay: false,
 				stopOnHover: true,
 				loop: true,
 			    center: true,
@@ -53,27 +53,25 @@
 					$('body,html').animate({scrollTop: top}, 1500);
 				});
 			});
-
+		</script>
+		<script type="text/javascript">
 			$(document).ready(function(){
-
 				$(window).scroll(function(){
-					if ($(this).scrollTop() ) {
+					if ($(this).scrollTop()) {
 						$('.scrollToTop').fadeIn();
 					} else {
 						$('.scrollToTop').fadeOut();
 					}
 				});
-
 				$('.scrollToTop').click(function(){
 					$('html, body').animate({scrollTop : 0},800);
 					return false;
 				});
-
 			});
 		</script>
 	</head>
 	<body>
-		<section class="header">
+		<section id="header" class="header">
 			<header class="header__bg">
 			<div class="header__top clearfix">
 				<div id="owl-example" class="owl-carousel">
@@ -104,7 +102,7 @@
 					<p class="header__title">Carpathian</p>
 					<p class="header__description">graphic design studio</p>
 				</div>
-				<div class="header__scroll">
+				<div class="header__scroll clearfix">
 					<ul id="scene">
   						<li class="layer" data-depth="2.00">
 					    	<svg version="1.1"
@@ -114,26 +112,26 @@
 			            		c191.62,0,198,177.76,198,198V550z"/>
       							<circle cx="306" cy="231" r="45"/>
 						    </svg>
-						  </li>
-						</ul>
-					<p class="header__scroll--description">Scroll down</p>
+						</li>
+						<p class="header__scroll--description">Scroll down</p>
+					</ul>
 				</div>
 			</div>
 	    	</header>
 		</section>
 		<section id="about_us" class="about">
 			<div class="container">
-			<div class="title__h1">
-				<h1>About us</h1>
-			</div>
-				<div class="about__text">
-				<p>
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tincidunt lorem sed velit fermentum lobortis. Fusce eu semper lacus, eget placerat mauris. Sed lectus tellus, sodales id elit a, feugiat porttitor nulla. Sed porta magna vitae nisl vulputate lacinia. Morbi malesuada sollicitudin tortor, vitae pharetra nunc lacinia eget. Nulla ornare purus nunc, ut dapibus leo sodales adipiscing. Praesent sit amet justo diam. Quisque sagittis egestas sem vitae vestibulum. Quisque nec lacus ornare, volutpat arcu in, lacinia dolor. Integer hendrerit enim ut mauris hendrerit condimentum. Donec ac enim urna.
-				<center>
-					Donec gravida diam id pulvinar adipiscing.
-				</center>
-				</p>
+				<div class="title__h1">
+					<h1>About us</h1>
 				</div>
+					<div class="about__text">
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tincidunt lorem sed velit fermentum lobortis. Fusce eu semper lacus, eget placerat mauris. Sed lectus tellus, sodales id elit a, feugiat porttitor nulla. Sed porta magna vitae nisl vulputate lacinia. Morbi malesuada sollicitudin tortor, vitae pharetra nunc lacinia eget. Nulla ornare purus nunc, ut dapibus leo sodales adipiscing. Praesent sit amet justo diam. Quisque sagittis egestas sem vitae vestibulum. Quisque nec lacus ornare, volutpat arcu in, lacinia dolor. Integer hendrerit enim ut mauris hendrerit condimentum. Donec ac enim urna.
+						</p>
+						<p>
+							Donec gravida diam id pulvinar adipiscing.
+						</p>
+					</div>
 				<div class="btn">
 					<button class="btn__text">
 						<a href="#load">Load more</a>						</a>
@@ -141,7 +139,7 @@
 				</div>
 			</div>
 		</section>
-		<section id="portfolio" class="portfolio">
+		<section id="portfolio">
 			<div class="container">
 				<div class="title__h1">
 					<h1>Portfolio</h1>
@@ -150,10 +148,26 @@
 					<p>Lorem ipsum dolor sit amet, consectetur adip-</p><p>iscing elit.</p>
 				</div>
 				<nav class="portfolio__sorted">
-					<button>Nature</button>
-					<button>Fashion</button>
-					<button>People</button>
-					<button>Architecture</button>
+					<button>
+						<a href="#nature">
+							Nature
+						</a>
+					</button>
+					<button>
+						<a href="#fashion">
+							Fashion
+						</a>
+					</button>
+					<button>
+						<a href="#people">
+							People
+						</a>
+					</button>
+					<button>
+						<a href="#architecture">
+							Architecture
+						</a>
+					</button>
 				</nav>
 				<div class="portfolio__gallery">
 					<ul class="clearfix">
@@ -306,7 +320,7 @@
 						True beauty is something that attacks, overpowers, robs, and finally destroys.
 					</p>
 				</blockquote>
-				<p class="quote__signature">
+				<p class="quote__author">
 					Yukio Mishima
 				</p>
 			</div>
@@ -382,7 +396,7 @@
 				</div>
 			</div>
 		</section>
-		<section id="blog" class="from__blog">
+		<section id="blog">
 			<div class="container">
 				<div class="title__h1">
 					<h1>From blog</h1>
@@ -486,7 +500,7 @@
 							<img src="img/blog-3.jpg">
 							<div class="item__description">
 								<h5>Nice day</h5>
-								<div class="item__description--date">
+ 								<div class="item__description--date">
 									<span class="digit">30</span>
 									<span class="month">June</span>
 								</div>
@@ -580,7 +594,7 @@
 				graphic deisgn studio
 				</p>
 				<div class="footer__social">
-					<a href="#">	
+					<a href="#">
 						<img src="pic/google.png" alt="img_not_found">
 					</a>
 					<a href="#">
