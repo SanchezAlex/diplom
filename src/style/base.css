@@ -247,17 +247,14 @@ h1 {
 
 .portfolio__gallery ul {
 	list-style-type: none;
-	margin: 0 -28.44%;
-}
-
-.portfolio__gallery--item {
-	float: left;
+	/*margin: 0 -28.44%;*/
 }
 
 .view {
-   float: left;
-   position: relative;
-   overflow: hidden;
+    float: left;
+ 	position: relative;
+    overflow: hidden;
+	max-width: 100%;
 }
 
 .view-first:hover .mask {
@@ -678,7 +675,6 @@ blockquote::after{
 
 #owl-demo .owl-wrapper-outer {
 	padding: 84px 0 122px;
-	float: left;
 	margin: 0 auto;
 }
 
@@ -788,11 +784,12 @@ blockquote::after{
 }
 
 .our__clients__logo {
+	display: block;
 	margin: 0 -28.44%;
 	padding-top: 116px;
 }
 
-.our__clients__logo div {
+.our__clients__logo li {
 	float: left;
 	border: 1px solid #ececec;
 	background: #ffffff;

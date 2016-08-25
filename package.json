@@ -1,8 +1,23 @@
 {
-  "name": "diplom",
+  "name": "diplom_builder",
   "version": "1.0.0",
-  "description": "landing page",
+  "description": "",
   "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "browser-sync": "^2.14.0",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-clean": "^0.3.2",
+    "gulp-concat": "^2.6.0",
+    "gulp-csscomb": "^3.0.7",
+    "gulp-csso": "^2.0.0",
+    "gulp-htmlmin": "^2.0.0",
+    "gulp-imagemin": "^3.0.3",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-uglify": "^2.0.0",
+    "gulp-uncss": "^1.0.6"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -10,13 +25,10 @@
     "type": "git",
     "url": "git+https://github.com/SanchezAlex/diplom.git"
   },
-  "author": "Alex",
+  "author": "SanchezAlex",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/SanchezAlex/diplom/issues"
   },
-  "homepage": "https://github.com/SanchezAlex/diplom#readme",
-  "devDependencies": {
-    "gulp": "^3.9.1"
-  }
+  "homepage": "https://github.com/SanchezAlex/diplom#readme"
 }
