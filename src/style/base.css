@@ -685,7 +685,7 @@ blockquote::after{
 }
 
 .from__blog--item {
-	margin: 0 2.94%;
+	/*margin: 0 2.94%;*/
 	display: block;
 	/*float: left;*/
 }
@@ -719,7 +719,7 @@ blockquote::after{
 	padding: 37px 75px 0 14px;
 	color: white;
 	font-family: Raleway;
-	font-size: 18px;
+	font-size: 17px;
 	font-weight: 700;
 	text-transform: uppercase;
 	text-align: justify;
@@ -961,19 +961,227 @@ input:focus:-ms-input-placeholder      {text-indent: 500px; transition: text-ind
 	bottom: 17px;
 }
 
-/* @media screen and (max-width: 768px) {
-	.row-text {
-		width: auto;
-		margin-top: 250px;
+@media screen and (max-width: 1280px) {
+    .menu {
+        right: 7%;
+    }
+	.portfolio__gallery ul, .our__clients__logo {
+		margin: 0 -12.74%;
 	}
-	.row-aboutus {
-		width: 40%;
+	.view {
+		width: 25%;
 	}
-	.img-wrap {
-		width: 100%;
-		height: auto;
+	.view h2 {
+		font-size: 20px;
 	}
-	.aboutus .wrap::after {
-		content: none;
+	.view p {
+		font-size: 15px;
 	}
-} */
+}
+
+@media screen and (max-width: 1024px) {
+    .menu {
+        right: 5%;
+    }
+    .menu__item {
+        font-size: 14px;
+    }
+    .about__text {
+        padding: 100px 40px;
+    }
+
+    .title__h1 {
+        padding-top: 80px;
+    }
+    .portfolio__gallery ul, .our__clients__logo {
+        margin: 0 -0.19%;
+    }
+    .view h2 {
+        margin: 40px 0 0 0;
+        padding: 15px;
+    }    .view p {
+        top: -5%;
+        line-height: 1.1;
+    }
+    blockquote {
+        margin: 0;
+        padding: 140px 40px 0;
+    }
+    blockquote::before {
+        left: 3.55%;
+        top: 63%;
+    }
+    blockquote::after {
+        right: 4%;
+    }
+    .quote__text {
+        font-size: 28px;
+        text-align: center;
+    }
+    .quote__author {
+        margin: 0;
+        padding: 63px 41px 74px 0;
+    }
+    .owl-prev {
+        left: 0;
+    }
+    .owl-next {
+        right: 0;
+    }
+    .scrollToTop {
+        right: 40px;
+    }
+    .btn {
+        padding: 0 0 70px;
+    }
+    .btn__text a {
+        padding: 20px 40px;
+    }
+    .our__clients__logo li {
+        height: 180px;
+    }
+    .pricing__main {
+        margin: 0;
+    }
+    .services__block ul {
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .header__logo {
+        left: 7%;
+    }
+    .menu {
+        right: 4%;
+    }
+    .menu__item {
+        font-size: 12px;
+        padding-right: 13px;
+    }
+    .menu__item:after {
+        margin-left: 13px;
+    }
+    .header__title {
+        font-size: 55px;
+    }
+    .header__description {
+        font-size: 18px;
+    }
+    .header__scroll {
+        bottom: 10%;
+    }
+    .header__scroll--description {
+        padding: 2px;
+        font-size: 15px;
+    }
+    h1 {
+        font-size: 37px;
+    }
+    .title__h1 {
+        padding-top: 60px;
+    }
+    .about__text {
+        padding: 50px 30px;
+    }
+    .btn__text a {
+        padding: 15px 30px;
+        font-size: 20px;
+    }
+    .portfolio__description p {
+        font-size: 20px;
+    }
+    .portfolio__sorted button {
+        padding: 15px 20px;
+    }
+    .view h2 {
+        margin: 50px 0 0 0;
+        padding: 12px;
+        font-size: 17px;
+    }
+    .view p {
+        top: -25%;
+    }
+    .our__team__gallery {
+        padding: 80px 0 90px;
+    }
+    .our__team__gallery ul {
+        margin: 0;
+        padding: 0 4%;
+    }
+    .our__team__gallery--foto {
+        padding: 10px;
+        float: none;
+    }
+    .our__team__gallery--foto span {
+        padding-top: 10px;
+    }
+    .our__skills__block {
+        padding-top: 100px;
+    }
+    .our__skills__block ul {
+        padding: 0;
+    }
+    .our__skills__block li {
+        padding: 0 6.2%;
+    }
+    .quote__text {
+        font-size: 21px;
+    }
+    .quote__author {
+        margin: 0;
+        padding: 43px 41px 64px 0;
+        font-size: 20px;
+    }
+    .services__block {
+        padding: 90px 0;
+    }
+    .services__block h3 {
+        font-size: 22px;
+        padding-top: 50px;
+    }
+    .services__block li:nth-child(2) h3 {
+         padding-top: 65px;
+    }
+    .pricing__main {
+        padding: 70px 7.72% 100px;
+    }
+    .pricing__main--btn a {
+        padding: 20px 40px;
+    }
+    .pricing__main--features {
+        padding: 40px 16.9% 0;
+    }
+    .item__frame {
+        top: -6px;
+        left: 62px;
+    }
+    .item__description {
+        left: 68px;
+        right: 68px;
+    }
+    .owl-next {
+        right: 10px;
+    }
+    .owl-prev {
+        left: 10px;
+    }
+    .our__clients__logo li {
+        width: 24.7%;
+        height: 150px;
+    }
+}
+
+@media screen and (min-width: 240px) {
+    /*.about__text {*/
+        /*padding: 50px 45px;*/
+        /*font-size: 13px;*/
+        /*line-height: 1.3;*/
+    /*}*/
+    /*.portfolio__description p {*/
+        /*font-size: 12px;*/
+    /*}*/
+    /*.view {*/
+        /*width: 50%;*/
+    /*}*/
+}

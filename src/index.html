@@ -2,7 +2,8 @@
 <html lang="en">
 	<head>
 	    <meta charset="UTF-8">
-	    <title>Carpathian</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Carpathian</title>
 	    <link rel="stylesheet" href="style/reset.css">
 	    <link rel="stylesheet" href="style/base.css">
 		<link href='https://fonts.googleapis.com/css?family=Raleway:300,400,700' rel='stylesheet' type='text/css'>
@@ -14,20 +15,24 @@
         <script src="owl-carousel/owl.carousel.min.js"></script>
         <script>
             $(document).ready(function() {
- 
-            $("#owl-example").owlCarousel({
-                autoPlay : true,
-				loop: true,
-                stopOnHover: true,
-                rewindNav: true,
-                autoHeight: false,
-                slideSpeed: 500,
-                paginationSpeed: 1000,
-                rewindSpeed: 1000,
-                singleItem: true
-          	});
 
-			$("#owl-demo").owlCarousel({
+                $("#owl-example").owlCarousel({
+                    autoPlay: true,
+                    loop: true,
+                    stopOnHover: true,
+                    rewindNav: true,
+                    autoHeight: false,
+                    slideSpeed: 500,
+                    paginationSpeed: 1000,
+                    rewindSpeed: 1000,
+                    singleItem: true
+                });
+            });
+        </script>
+        <script>
+            $(document).ready(function() {
+
+                $("#owl-demo").owlCarousel({
 				autoPlay: false,
 				stopOnHover: true,
 				loop: true,
@@ -38,10 +43,10 @@
 					"<img	src='pic/right.png'>"
 					],
 				items: 3,
-				itemsDesktop: [1199,3],
-				itemsDesktopSmall: [979,3]
+				itemsDesktop: [1024,3],
+				itemsDesktopSmall: [768,2]
 
-			});
+			    });
 			});
         </script>
 		<script type="text/javascript">
