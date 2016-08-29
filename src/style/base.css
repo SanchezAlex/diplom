@@ -1082,9 +1082,9 @@ input:focus:-ms-input-placeholder      {text-indent: 500px; transition: text-ind
         padding-top: 60px;
     }
     .about__text {
-        padding: 50px 30px;
+        padding: 50px 20px;
     }
-    .btn__text a {
+    .btn__text a {20px
         padding: 15px 30px;
         font-size: 20px;
     }
@@ -1101,6 +1101,7 @@ input:focus:-ms-input-placeholder      {text-indent: 500px; transition: text-ind
     }
     .view p {
         top: -25%;
+        font-size: 11px;
     }
     .our__team__gallery {
         padding: 80px 0 90px;
@@ -1169,6 +1170,90 @@ input:focus:-ms-input-placeholder      {text-indent: 500px; transition: text-ind
     .our__clients__logo li {
         width: 24.7%;
         height: 150px;
+    }
+    .contact__us__form textarea {
+        width: 47%;
+    }
+    .contact__us__button {
+        margin-right: 32.4%;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .header__title {
+        font-size: 45px;
+    }
+    .header__description {
+        font-size: 16px;
+    }
+    svg {
+        width: 20px;
+    }
+    .header__scroll--description {
+        padding: 0;
+        font-size: 11px;
+    }
+    .menu__item {
+        font-size: 10px;
+        padding-right: 10px;
+    }
+    .portfolio__description p {
+        font-size: 17px;
+    }
+    .view {
+        width: 50%;
+    }
+    .view h2 {
+        margin: 20px 0 0 0;
+        padding: 20px;
+        font-size: 24px;
+    }
+    .view p {
+        font-size: 15px;
+        top: 20%;
+        line-height: 1.4;
+    }
+    .our__skills__block li {
+        width: 33%;
+        padding: 0;
+    }
+    blockquote {
+        padding: 105px 20px 0;
+    }
+    .quote__text {
+        font-size: 16px;
+    }
+    blockquote::before,
+    blockquote::after {
+        font-size: 40px;
+    }
+    blockquote::before {
+        left: 7.55%;
+        top: 65%;
+    }
+    blockquote::after {
+        right: 7%;
+        top: 82%;
+    }
+    .services__block {
+        padding: 65px 0;
+    }
+    .services__block li {
+        float: none;
+        padding: 2%;
+        width: 96%;
+    }
+    .pricing__main {
+        padding: 70px 1.72% 100px;
+    }
+    .our__clients__logo li {
+        width: 49.6%;
+    }
+    .contact__us__form textarea {
+        width: 48.9%;
+    }
+    .contact__us__button {
+        margin-right: 31.4%;
     }
 }
 

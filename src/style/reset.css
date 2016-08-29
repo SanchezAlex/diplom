@@ -28,9 +28,9 @@ html {
     user-select: none;
     
     -webkit-touch-callout: none;
-    -ms-touch-action: none;
+    -ms-touch-action: auto;
     
-    touch-action: none;
+    touch-action: auto;
     speak: none;
     font-family: sans-serif;
 }
