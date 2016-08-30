@@ -231,6 +231,7 @@ h1 {
 	font-size: 14px;
 	font-weight: 300;
 	text-transform: uppercase;
+	line-height: 2;
 }
 
 .portfolio__sorted button:last-child {
@@ -1257,16 +1258,187 @@ input:focus:-ms-input-placeholder      {text-indent: 500px; transition: text-ind
     }
 }
 
-@media screen and (min-width: 240px) {
-    /*.about__text {*/
-        /*padding: 50px 45px;*/
-        /*font-size: 13px;*/
-        /*line-height: 1.3;*/
-    /*}*/
-    /*.portfolio__description p {*/
-        /*font-size: 12px;*/
-    /*}*/
-    /*.view {*/
-        /*width: 50%;*/
-    /*}*/
+@media screen and (max-width: 240px) {
+	.header__logo {
+		left: 3%;
+		width: 9%;
+	}
+	.menu {
+		top: 2%;
+		right: 2%;
+	}
+	.menu__item {
+		font-size: 6px;
+		padding-right: 0;
+	}
+	.menu__item:after {
+		margin-left: 5px;
+	}
+	.menu__item:after {
+		width: 2px;
+		height: 2px;
+	}
+	.header__title {
+		font-size: 25px;
+	}
+	.header__description {
+		font-size: 12px;
+	}
+	svg {
+		width: 8px;
+		height: 14px;
+	}
+	.header__scroll--description {
+		font-size: 7px;
+	}
+	.owl-theme .owl-controls .owl-page span {
+		margin: 3px 3px 8px;
+		width: 4px;
+		height: 4px;
+	}
+	h1,
+	.title__h1__contact h1 {
+		font-size: 21px;
+		padding-bottom: 6px;
+	}
+	.title__h1 {
+		padding-top: 25px;
+	}
+	.about__text {
+		padding: 20px 9px;
+		font-size: 14px;
+		line-height: 26px;
+	}
+	.btn {
+		padding: 0 0 34px;
+	}
+	.btn__text a {
+		font-size: 11px;
+		padding: 10px 24px;
+	}
+	.portfolio__description {
+		padding-top: 23px;
+	}
+	.portfolio__description p {
+		font-size: 12px;
+	}
+	.portfolio__sorted,
+	.portfolio__gallery {
+		padding-top: 35px;
+	}
+	.portfolio__sorted button {
+		padding: 3px 5px;
+		margin: 0 -0.9%;
+	}
+	.portfolio__sorted a {
+		font-size: 9px;
+	}
+	.view h2 {
+		margin: 70px 0 0 0;
+		padding: 7px;
+		font-size: 11px;
+	}
+	.view p {
+		font-size: 7px;
+		top: -75%;
+		line-height: 1;
+	}
+	.btn:nth-of-type(2) {
+		padding: 35px 0;
+	}
+	.our__team__gallery {
+		padding: 40px 0;
+	}
+	.our__team__gallery h3 {
+		padding-top: 20px;
+		font-size: 17px;
+	}
+	.our__team__gallery span {
+		font-size: 14px;
+		line-height: 1;
+	}
+	.our__skills__block {
+		padding-top: 50px;
+	}
+	.our__skills__block li {
+		float: none;
+		width: 100%;
+	}
+	.graph-title {
+		margin-top: 80px;
+		font-size: 15px;
+		padding-bottom: 50px;
+	}
+	blockquote {
+		padding: 70px 10px 0;
+	}
+	blockquote::before, blockquote::after {
+		font-size: 20px;
+	}
+	blockquote::before {
+		top: 59%;
+	}
+	.quote__text {
+		font-size: 11px;
+	}
+	.quote__author {
+		margin: 0;
+		padding: 16px 18px 46px 0;
+		font-size: 12px;
+	}
+	.services__block h3 {
+		font-size: 16px;
+		padding-top: 35px;
+	}
+	.services__block p {
+		padding: 25px 0;
+		font-size: 12px;
+	}
+	.pricing__main {
+		padding: 50px 10px;
+	}
+	.pricing__main li {
+		float: none;
+		width: 100%;
+		margin: 10px 0;
+	}
+	.our__clients__logo li {
+		width: 49.1%;
+		height: 116px;
+	}
+	.our__clients__logo {
+		margin: 0;
+		padding: 40px 0 0;
+	}
+	.contact__us__form {
+		padding: 50px 0 30px;
+	}
+	.contact__us__form input {
+		width: 85%;
+		margin: 4px;
+		padding: 10px;
+		font-size: 11px;
+	}
+	.contact__us__form textarea {
+		width: 77%;
+	}
+	.contact__us__button {
+		margin: 10px 0;
+		padding: 10px 30px;
+	}
+	.contact__us__button a {
+		font-size: 11px;
+	}
+	.footer__title {
+		font-size: 16px;
+	}
+	.scrollToTop {
+		width: 70px;
+		height: 80px;
+		font-size: 10px;
+		right: 10px;
+	}
+	.scrollToTop span {
+		left: 25px
+	}
 }
