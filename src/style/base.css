@@ -31,11 +31,14 @@
 	top: 96%;
 	left: 0;
 	right:0;
+	bottom: 0;
 	transform: translate(0,-50%);
 }
 
 .owl-page span {
-	margin: 0 5px 29px;
+	margin: 0 5px 0;
+    width: 13px;
+    height: 13px;
 }
 
 .header__logo {
@@ -461,12 +464,12 @@ h1 {
 	padding-top: 51px;
 	padding-bottom: 122px;
 }
-.graph-container {
-   width: 160px;
-   margin-left: auto;
-   margin-right: auto;
-   display: block;
-}
+/*.graph-container {*/
+   /*width: 160px;*/
+   /*margin-left: auto;*/
+   /*margin-right: auto;*/
+   /*display: block;*/
+/*}*/
 
 .graph-donut {
    position: relative;
@@ -680,44 +683,30 @@ blockquote::after{
 }
 
 #owl-demo img {
-	position: relative;
 	width: auto;
 	margin: 0 auto;
 }
-
-.from__blog--item {
-	/*margin: 0 2.94%;*/
-	display: block;
-	/*float: left;*/
-}
-
-.item__frame {
-	position: absolute;
-	top: -6px;
-	left: 40px;
-}
 .item {
 	display: block;
-	/*height: auto;*/
+    position: relative;
 }
 .item__description {
 	display: flex;
 	position: absolute;
-	top: 0;
-	left: 46px;
-	right: 46px;
-	bottom: 0;
+	top: 5px;
+	left: 50px;
+	right: 50px;
+	bottom: 5px;
 	background-color: rgba(0, 0, 0, 0.5);
 	color: #FFFFFF;
+	border: solid 3px #fff;
 }
-
 .item__description:hover {
 	background: rgba(0, 0, 0, 0.2);
 	cursor: pointer;
 }
-
 .item__description h5 {
-	padding: 37px 75px 0 14px;
+	padding: 37px 70px 0 14px;
 	color: white;
 	font-family: Raleway;
 	font-size: 17px;
@@ -962,7 +951,7 @@ input:focus:-ms-input-placeholder      {text-indent: 500px; transition: text-ind
 	bottom: 17px;
 }
 
-@media screen and (max-width: 1280px) {
+@media screen and (max-width: 1280px) and (max-width: 1920px){
     .menu {
         right: 7%;
     }
@@ -987,7 +976,7 @@ input:focus:-ms-input-placeholder      {text-indent: 500px; transition: text-ind
     .menu__item {
         font-size: 14px;
     }
-    .about__text {
+	.about__text {
         padding: 100px 40px;
     }
 
@@ -1076,6 +1065,9 @@ input:focus:-ms-input-placeholder      {text-indent: 500px; transition: text-ind
         padding: 2px;
         font-size: 15px;
     }
+	.owl-pagination {
+		top: 94%;
+	}
     h1 {
         font-size: 37px;
     }
@@ -1154,13 +1146,9 @@ input:focus:-ms-input-placeholder      {text-indent: 500px; transition: text-ind
     .pricing__main--features {
         padding: 40px 16.9% 0;
     }
-    .item__frame {
-        top: -6px;
-        left: 62px;
-    }
     .item__description {
-        left: 68px;
-        right: 68px;
+        left: 72px;
+        right: 72px;
     }
     .owl-next {
         right: 10px;
@@ -1171,6 +1159,9 @@ input:focus:-ms-input-placeholder      {text-indent: 500px; transition: text-ind
     .our__clients__logo li {
         width: 24.7%;
         height: 150px;
+    }
+    .title__h1__contact h1 {
+        font-size: 37px;
     }
     .contact__us__form textarea {
         width: 47%;
@@ -1189,14 +1180,19 @@ input:focus:-ms-input-placeholder      {text-indent: 500px; transition: text-ind
     }
     svg {
         width: 20px;
+        height: 34px;
     }
     .header__scroll--description {
-        padding: 0;
+        padding: 4px 0;
         font-size: 11px;
     }
     .menu__item {
         font-size: 10px;
         padding-right: 10px;
+    }
+    .owl-page span {
+        width: 11px;
+        height: 11px;
     }
     .portfolio__description p {
         font-size: 17px;
@@ -1224,32 +1220,47 @@ input:focus:-ms-input-placeholder      {text-indent: 500px; transition: text-ind
     .quote__text {
         font-size: 16px;
     }
-    blockquote::before,
-    blockquote::after {
+    blockquote:before,
+    blockquote:after {
         font-size: 40px;
     }
-    blockquote::before {
+    blockquote:before {
         left: 7.55%;
         top: 65%;
     }
-    blockquote::after {
+    blockquote:after {
         right: 7%;
         top: 82%;
     }
     .services__block {
         padding: 65px 0;
     }
+    .services__block p {
+        padding-top: 24px;
+    }
     .services__block li {
         float: none;
-        padding: 2%;
+        margin: 0 auto;
+        padding: 20px 10px;
         width: 96%;
     }
     .pricing__main {
-        padding: 70px 1.72% 100px;
+        padding: 70px 0 100px;
     }
-    .our__clients__logo li {
-        width: 49.6%;
-    }
+	.item__description {
+		left: 40px;
+		right: 40px;
+	}
+	.owl-next {
+		right: 0;
+	}
+	.owl-prev {
+		left: 0;
+	}
+	.our__clients__logo li {
+		width: 49.6%;
+		height: 144px;
+	}
     .contact__us__form textarea {
         width: 48.9%;
     }
@@ -1258,187 +1269,469 @@ input:focus:-ms-input-placeholder      {text-indent: 500px; transition: text-ind
     }
 }
 
-@media screen and (max-width: 240px) {
-	.header__logo {
-		left: 3%;
-		width: 9%;
-	}
-	.menu {
-		top: 2%;
-		right: 2%;
-	}
-	.menu__item {
-		font-size: 6px;
-		padding-right: 0;
-	}
-	.menu__item:after {
-		margin-left: 5px;
-	}
-	.menu__item:after {
-		width: 2px;
-		height: 2px;
-	}
-	.header__title {
-		font-size: 25px;
-	}
-	.header__description {
-		font-size: 12px;
-	}
-	svg {
-		width: 8px;
-		height: 14px;
-	}
-	.header__scroll--description {
-		font-size: 7px;
-	}
-	.owl-theme .owl-controls .owl-page span {
-		margin: 3px 3px 8px;
-		width: 4px;
-		height: 4px;
-	}
-	h1,
-	.title__h1__contact h1 {
-		font-size: 21px;
-		padding-bottom: 6px;
-	}
-	.title__h1 {
-		padding-top: 25px;
-	}
-	.about__text {
-		padding: 20px 9px;
-		font-size: 14px;
-		line-height: 26px;
-	}
-	.btn {
-		padding: 0 0 34px;
-	}
-	.btn__text a {
-		font-size: 11px;
-		padding: 10px 24px;
-	}
-	.portfolio__description {
-		padding-top: 23px;
-	}
-	.portfolio__description p {
-		font-size: 12px;
-	}
-	.portfolio__sorted,
-	.portfolio__gallery {
-		padding-top: 35px;
-	}
-	.portfolio__sorted button {
-		padding: 3px 5px;
-		margin: 0 -0.9%;
-	}
-	.portfolio__sorted a {
-		font-size: 9px;
-	}
+@media screen and (max-width: 540px) {
 	.view h2 {
-		margin: 70px 0 0 0;
-		padding: 7px;
-		font-size: 11px;
-	}
-	.view p {
-		font-size: 7px;
-		top: -75%;
-		line-height: 1;
-	}
-	.btn:nth-of-type(2) {
-		padding: 35px 0;
-	}
-	.our__team__gallery {
-		padding: 40px 0;
-	}
-	.our__team__gallery h3 {
-		padding-top: 20px;
-		font-size: 17px;
-	}
-	.our__team__gallery span {
-		font-size: 14px;
-		line-height: 1;
-	}
-	.our__skills__block {
-		padding-top: 50px;
-	}
-	.our__skills__block li {
-		float: none;
-		width: 100%;
-	}
-	.graph-title {
-		margin-top: 80px;
-		font-size: 15px;
-		padding-bottom: 50px;
-	}
-	blockquote {
-		padding: 70px 10px 0;
-	}
-	blockquote::before, blockquote::after {
+		margin: 30px 0 0 0;
+		padding: 13px;
 		font-size: 20px;
 	}
-	blockquote::before {
-		top: 59%;
+	.view p {
+		top: 0;
+		line-height: 1.2;
 	}
-	.quote__text {
-		font-size: 11px;
+    .pricing__main--features {
+        padding: 25px 5.9% 0;
+    }
+    .pricing__main--btn a {
+        padding: 20px 32px;
+    }
+	.item__description {
+		left: 15px;
+		right: 15px;
 	}
-	.quote__author {
-		margin: 0;
-		padding: 16px 18px 46px 0;
+	.owl-prev {
+		left: 18px;
+	}
+	.owl-next {
+		right: 18px;
+	}
+    .quote__text {
+        font-size: 14px;
+    }
+    blockquote:before {
+        left: 5.55%;
+        top: 62%;
+    }
+    blockquote:after {
+        right: 5%;
+        top: 84%;
+    }
+    .contact__us__form textarea {
+        width: 50.9%;
+    }
+    .contact__us__button {
+        margin-right: 30%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .header__title {
+        font-size: 35px;
+    }
+    .header__description {
+        font-size: 12px;
+    }
+    svg {
+        width: 15px;
+        height: 24px;
+    }
+    .header__scroll--description {
+		padding: 5px 0 0;
+        font-size: 9px;
+	}
+    h1 {
+        font-size: 30px;
+    }
+    .title__h1 {
+        padding-top: 45px;
+    }
+    .about__text {
+        padding: 40px 15px;
+        font-size: 15px;
+        line-height: 1.6;
+    }
+    .btn__text a {
+        font-size: 14px;
+        padding: 12px 24px;
+    }
+    .portfolio__description p {
+        font-size: 14px;
+    }
+    .portfolio__sorted a {
+        font-size: 12px;
+    }
+    .portfolio__sorted button {
+        padding: 5px 15px;
+    }
+    .view h2 {
+		margin: 40px 0 0 0;
+        font-size: 17px;
+	}
+	.view p {
 		font-size: 12px;
+		top: -4%;
 	}
-	.services__block h3 {
-		font-size: 16px;
-		padding-top: 35px;
+    .btn:nth-of-type(2) {
+        padding: 40px 0;
+    }
+    .our__skills__block {
+        padding-top: 60px;
+    }
+    .our__skills__block li {
+        float: none;
+        width: auto;
+    }
+    .graph-title {
+        margin-top: 90px;
+        padding-bottom: 70px;
+        font-size: 17px;
+    }
+    blockquote:before {
+        left: 3.55%;
+        top: 65%;
+    }
+    blockquote:after {
+        right: 3.5%;
+        top: 83%;
+    }
+    .quote__text {
+        font-size: 13px;
+    }
+    .quote__author {
+        padding: 26px 37px 64px 0;
+        font-size: 16px;
+    }
+    .services__block p {
+        font-size: 13px;
+    }
+	.pricing__main--features {
+		padding: 20px 28.9% 0;
 	}
-	.services__block p {
-		padding: 25px 0;
-		font-size: 12px;
-	}
-	.pricing__main {
-		padding: 50px 10px;
-	}
-	.pricing__main li {
-		float: none;
-		width: 100%;
-		margin: 10px 0;
-	}
-	.our__clients__logo li {
-		width: 49.1%;
-		height: 116px;
-	}
-	.our__clients__logo {
-		margin: 0;
-		padding: 40px 0 0;
-	}
-	.contact__us__form {
-		padding: 50px 0 30px;
-	}
-	.contact__us__form input {
-		width: 85%;
-		margin: 4px;
-		padding: 10px;
-		font-size: 11px;
-	}
-	.contact__us__form textarea {
-		width: 77%;
-	}
-	.contact__us__button {
-		margin: 10px 0;
-		padding: 10px 30px;
-	}
-	.contact__us__button a {
-		font-size: 11px;
-	}
-	.footer__title {
-		font-size: 16px;
-	}
-	.scrollToTop {
-		width: 70px;
-		height: 80px;
-		font-size: 10px;
-		right: 10px;
-	}
-	.scrollToTop span {
-		left: 25px
-	}
+    .pricing__main li {
+        float: none;
+        width: auto;
+        margin: 0 17.98% 5%;
+    }
+    .pricing__main--btn a {
+        padding: 20px 55px;
+    }
+    .item__description {
+        left: 119px;
+        right: 119px;
+    }
+    .our__clients__logo {
+        padding-top: 60px;
+    }
+    .our__clients__logo li {
+        width: 49.58%;
+    }
+    .contact__us__button {
+        margin: 10px;
+    }
+    .contact__us__form input {
+        width: auto;
+    }
+    .contact__us__form textarea {
+        width: 77.3%;
+    }
+    .scrollToTop {
+        right: 0px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .header__logo {
+        left: 2%;
+    }
+    .menu__item {
+        font-size: 8px;
+        padding-right: 2px;
+    }
+    .menu__item:after {
+        margin-left: 5px;
+        width: 3px;
+        height: 3px;
+    }
+    .header__title {
+        font-size: 25px;
+    }
+    svg {
+        width: 13px;
+        height: 20px;
+    }
+    .header__scroll--description {
+        font-size: 7px;
+    }
+    .header__scroll {
+        bottom: 7%;
+    }
+    .owl-page span {
+        margin: 0 3px 3px;
+        width: 5px;
+        height: 5px;
+    }
+    .title__h1 {
+        padding-top: 30px;
+    }
+    h1 {
+        font-size: 25px;
+    }
+    .about__text {
+        padding: 30px 10px;
+        font-size: 14px;
+    }
+    .btn {
+        padding: 0 0 40px;
+    }
+    .btn__text a {
+        font-size: 12px;
+        padding: 10px 20px;
+    }
+    .portfolio__sorted button {
+        margin: 0 -0.8%;
+        padding: 2px 7px;
+    }
+    .portfolio__sorted a {
+        font-size: 11px;
+    }
+    .portfolio__gallery {
+        padding-top: 45px;
+    }
+    .view h2 {
+        margin: 61px 0 0 0;
+        padding: 8px;
+        font-size: 14px;
+    }
+    .view p {
+        font-size: 10px;
+        top: -46%;
+    }
+    .our__team__gallery {
+        padding: 40px 0 50px;
+    }
+    blockquote {
+        padding: 75px 10px 0;
+    }
+    blockquote:before {
+        left: 10.55%;
+        top: 53%;
+    }
+    blockquote:after {
+        right: 9.5%;
+        top: 79%;
+    }
+    .quote__author {
+        padding: 15px 33px 47px 0;
+        font-size: 13px;
+    }
+    .services__block {
+        padding: 40px 0;
+    }
+    .services__block li {
+        padding: 25px 10px;
+    }
+    .services__block h3,
+    .services__block li:nth-child(2) h3 {
+        font-size: 17px;
+        padding-top: 33px;
+    }
+    .services__block p {
+        font-size: 11px;
+        padding-top: 16px;
+    }
+    .pricing__main {
+        padding: 40px 0 50px;
+    }
+    .pricing__main li {
+        margin: 0 5.98% 5%;
+    }
+    .pricing__main--features {
+        padding: 20px 30% 0;
+        font-size: 14px;
+        line-height: 30px;
+    }
+    .pricing__main--btn {
+        margin: 40px 9.09% 20px;
+    }
+    .item__description {
+        left: 41px;
+        right: 41px;
+    }
+    #owl-demo .owl-wrapper-outer {
+        padding: 50px 0;
+    }
+    .owl-prev {
+        left: 0;
+        top: -270px;
+    }
+    .owl-next {
+        right: 0;
+        top: -270px;
+    }
+    .our__clients__logo li {
+        width: 49.3%;
+    }
+    .title__h1__contact h1 {
+        font-size: 25px;
+    }
+    .contact__us__form {
+        padding: 50px 0 40px;
+    }
+    .contact__us__form input {
+        width: 77.3%;
+        margin: 3px 0;
+        padding: 10px;
+        font-size: 10px;
+    }
+    .contact__us__form textarea {
+        width: 71.3%;
+    }
+    .contact__us__button {
+        margin: 5px;
+        padding: 10px 44px;
+    }
+    .contact__us__button a {
+        font-size: 11px;
+    }
+    .footer__title {
+        padding: 10px 0 0 0;
+        font-size:16px;
+    }
+    .footer__description {
+        padding-top: 5px;
+        font-size: 9px;
+    }
+    .footer__social {
+        padding-top: 40px;
+    }
+    .footer__copyright {
+        padding-top: 24px;
+        font-size: 9px;
+    }
+    .scrollToTop {
+        background: url(../pic/top.png) no-repeat 10px 0;
+        font-size: 10px;
+        width: 58px;
+        height: 43px;
+    }
+}
+
+@media screen and (max-width: 240px) {
+    .header__logo {
+        left: 2%;
+        width: 10%;
+    }
+    .menu__item {
+        font-size: 8px;
+        padding-right: 2px;
+    }
+    .menu__item:after {
+        margin-left: 5px;
+        width: 3px;
+        height: 3px;
+    }
+    .header__title {
+        font-size: 20px;
+    }
+    .header__description {
+        font-size: 10px;
+    }
+    svg {
+        width: 10px;
+        height: 15px;
+    }
+    .header__scroll--description {
+        font-size: 6px;
+    }
+    .header__scroll {
+        bottom: 7%;
+    }
+    .owl-pagination {
+        top: 93%;
+    }
+    h1 {
+        font-size: 20px;
+    }
+    .about__text {
+        font-size: 12px;
+    }
+    .btn__text a {
+        font-size: 9px;
+        padding: 8px 17px;
+    }
+    .portfolio__description {
+        padding-top: 25px;
+    }
+    .portfolio__description p {
+        font-size: 11px;
+    }
+    .portfolio__sorted {
+        padding-top: 35px;
+    }
+    .portfolio__sorted a {
+        font-size: 9px;
+    }
+    .portfolio__sorted button {
+        margin: 0 -0.9%;
+        padding: 2px 5px;
+    }
+    .view h2 {
+        margin: 70px 0 0 0;
+        padding: 6px;
+        font-size: 10px;
+    }
+    .view p {
+        font-size: 8px;
+        top: -78%;
+        white-space: pre-wrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        padding: 10px;
+    }
+    .btn:nth-of-type(2) {
+        padding: 25px 0;
+    }
+    .our__team__gallery h3  {
+        font-size: 12px;
+        padding-top: 10px;
+    }
+    .our__team__gallery--foto span {
+        padding-top: 4px;
+        font-size: 12px;
+    }
+    .graph-title {
+        margin-top: 73px;
+        padding-bottom: 30px;
+        font-size: 15px;
+    }
+    .quote__text {
+        font-size: 11px;
+    }
+    blockquote:before {
+        left: 6.55%;
+    }
+    blockquote:after {
+        right: 6.5%;
+    }
+    .services__block li {
+        padding: 15px 5px;
+    }
+    .services__block p {
+        font-size: 10px;
+        line-height: 1.5;
+    }
+    .pricing__main--header {
+        padding: 12px;
+        font-size: 14px;
+    }
+    .pricing__main--features {
+        padding: 20px 57px 0;
+        font-size: 12px;
+        line-height: 20px;
+    }
+    .pricing__main--btn a {
+        padding: 9px 38px;
+        font-size: 11px;
+    }
+    .item__description {
+        left: 4px;
+        right: 4px;
+    }
+    .our__clients__logo li {
+        width: 49%;
+        height: 116px;
+    }
+    .contact__us__form textarea {
+        width: 69.3%;
+    }
 }
