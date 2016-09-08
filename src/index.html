@@ -74,6 +74,19 @@
 				});
 			});
 		</script>
+		<script type="text/javascript">
+			$(document).ready(function () {
+				$('.nav-menu').on('click', function(){
+					if($(this).hasClass('active')) {
+						$('.box-menu').fadeOut(300);
+					}
+					else {
+						$('.box-menu').fadeIn(300);
+					}
+					$('.nav-menu').toggleClass('active');
+				});
+			});
+		</script>
 	</head>
 	<body>
 		<section id="header" class="header">
@@ -96,13 +109,30 @@
 				<a href="#">	
 					<img class="header__logo" src="pic/logo.png" alt="logo_not_foud">
 				</a>
-				<nav id="menu" class="menu">
-					<a href="#home" class="menu__item">Home</a>
-					<a href="#about_us" class="menu__item">About us</a>
-					<a href="#portfolio" class="menu__item">Portfolio</a>
-					<a href="#blog" class="menu__item">Blog</a>
-					<a href="#contacts" class="menu__item">Contacts</a>
+				<nav class="nav-menu">
+					<span></span>
+					<span></span>
+					<span></span>
 				</nav>
+					<menu class="box-menu">
+						<ul class="menu">
+							<li>
+								<a href="#home" class="menu__item">Home</a>
+							</li>
+							<li>
+								<a href="#about_us" class="menu__item">About us</a>
+							</li>
+							<li>
+								<a href="#portfolio" class="menu__item">Portfolio</a>
+							</li>
+							<li>
+								<a href="#blog" class="menu__item">Blog</a>
+							</li>
+							<li>
+								<a href="#contacts" class="menu__item">Contacts</a>
+							</li>
+						</ul>
+					</menu>
 				<div class="header__text">
 					<p class="header__title">Carpathian</p>
 					<p class="header__description">graphic design studio</p>
@@ -144,7 +174,7 @@
 				</div>
 			</div>
 		</section>
-		<section id="portfolio">
+		<section id="portfolio" class="portfolio">
 			<div class="container">
 				<div class="title__h1">
 					<h1>Portfolio</h1>
@@ -372,7 +402,7 @@
 							modern design
 							</p>
 							<button class="pricing__main--btn">
-								<a href="#">Buy now</a>
+								<a href="#buy">Buy now</a>
 							</button>
 						</li>
 						<li>
@@ -383,7 +413,7 @@
 							modern design
 							</p>
 							<button class="pricing__main--btn">
-								<a href="#">Buy now</a>
+								<a href="#buy">Buy now</a>
 							</button>
 						</li>
 						<li>
@@ -394,14 +424,14 @@
 							modern design
 							</p>
 							<button class="pricing__main--btn">
-								<a href="#">Buy now</a>
+								<a href="#buy">Buy now</a>
 							</button>
 						</li>
 					</ul>
 				</div>
 			</div>
 		</section>
-		<section id="blog">
+		<section id="blog" class="blog">
 			<div class="container">
 				<div class="title__h1">
 					<h1>From blog</h1>
