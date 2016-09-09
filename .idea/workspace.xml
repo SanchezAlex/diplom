@@ -2,13 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ba67ddec-ff07-4094-970e-281b8027a438" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/js/blogSlider.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/js/headerSlider.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/js/navAnchor.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/js/navMenuButton.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/js/scrollToTop.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/index.html" afterPath="$PROJECT_DIR$/src/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/style/base.css" afterPath="$PROJECT_DIR$/src/style/base.css" />
     </list>
     <ignored path="diplom.iws" />
@@ -73,7 +67,7 @@
             <entry file="file://$PROJECT_DIR$/src/style/base.css">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="378">
-                  <caret line="1509" column="19" selection-start-line="1509" selection-start-column="19" selection-end-line="1509" selection-end-column="19" />
+                  <caret line="1491" column="20" selection-start-line="1491" selection-start-column="20" selection-end-line="1491" selection-end-column="20" />
                   <folding />
                 </state>
               </provider>
@@ -130,7 +124,6 @@
         <option value="$PROJECT_DIR$/src/style/reset.css" />
         <option value="$PROJECT_DIR$/gulpfile.js" />
         <option value="$PROJECT_DIR$/src/owl-carousel/owl.theme.css" />
-        <option value="$PROJECT_DIR$/src/style/base.css" />
         <option value="$PROJECT_DIR$/src/scroll_to_top.js" />
         <option value="$PROJECT_DIR$/src/js/navMenuButton.js" />
         <option value="$PROJECT_DIR$/src/js/scrollToTop.js" />
@@ -138,6 +131,7 @@
         <option value="$PROJECT_DIR$/src/js/headerSlider.js" />
         <option value="$PROJECT_DIR$/src/js/blogSlider.js" />
         <option value="$PROJECT_DIR$/src/index.html" />
+        <option value="$PROJECT_DIR$/src/style/base.css" />
       </list>
     </option>
   </component>
@@ -639,7 +633,7 @@
       <workItem from="1473160166899" duration="13719000" />
       <workItem from="1473237620556" duration="9337000" />
       <workItem from="1473321920265" duration="23403000" />
-      <workItem from="1473407392799" duration="7249000" />
+      <workItem from="1473407392799" duration="8531000" />
     </task>
     <task id="LOCAL-00001" summary="portfolio: added hover button">
       <created>1471006884734</created>
@@ -753,11 +747,18 @@
       <option name="project" value="LOCAL" />
       <updated>1473352570432</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="fixed adaptive mode &amp; take out js code in separate files">
+      <created>1473433268964</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1473433268964</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="333185000" />
+    <option name="totallyTimeSpent" value="334467000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -860,7 +861,8 @@
     <MESSAGE value="adaptive: added 240px" />
     <MESSAGE value="adaptive: added 640, 540, 480, 320" />
     <MESSAGE value="adaptive: finished + added mobile nav-button" />
-    <option name="LAST_COMMIT_MESSAGE" value="adaptive: finished + added mobile nav-button" />
+    <MESSAGE value="fixed adaptive mode &amp; take out js code in separate files" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed adaptive mode &amp; take out js code in separate files" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1116,14 +1118,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/style/base.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="1509" column="19" selection-start-line="1509" selection-start-column="19" selection-end-line="1509" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/js/navMenuButton.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
@@ -1168,6 +1162,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="378">
           <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/style/base.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="1491" column="20" selection-start-line="1491" selection-start-column="20" selection-end-line="1491" selection-end-column="20" />
           <folding />
         </state>
       </provider>

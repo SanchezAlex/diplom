@@ -1484,10 +1484,9 @@ input:focus:-ms-input-placeholder      {text-indent: 500px; transition: text-ind
 	}
 	.nav-menu {
 		position: absolute;
-		top: 0;
+		top: 3%;
 		right: 3%;
-		margin-right: 5px;
-		margin-top: 5px;
+        padding: 3px;
 		cursor: pointer;
 	}
 	.nav-menu span {
@@ -1496,8 +1495,6 @@ input:focus:-ms-input-placeholder      {text-indent: 500px; transition: text-ind
 		width: 20px;
 		height: 3px;
 		margin: 3px;
-		left: 5px;
-		top: 2px;
 		background: #f4c60b;
 		-webkit-transition: all .3s ease-in;
 		-moz-transition: all .3s ease-in;
