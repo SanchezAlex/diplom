@@ -2,12 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ba67ddec-ff07-4094-970e-281b8027a438" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/img/blog_border-1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/img/blog_border-2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/img/blog_border-3.jpg" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/js/blogSlider.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/js/headerSlider.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/js/navAnchor.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/js/navMenuButton.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/js/scrollToTop.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/index.html" afterPath="$PROJECT_DIR$/src/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/owl-carousel/owl.theme.css" afterPath="$PROJECT_DIR$/src/owl-carousel/owl.theme.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/style/base.css" afterPath="$PROJECT_DIR$/src/style/base.css" />
     </list>
     <ignored path="diplom.iws" />
@@ -37,8 +38,8 @@
           <file leaf-file-name="gulpfile.js" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/gulpfile.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="540">
-                  <caret line="20" column="7" selection-start-line="20" selection-start-column="7" selection-end-line="20" selection-end-column="7" />
+                <state relative-caret-position="189">
+                  <caret line="7" column="24" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
                   <folding />
                 </state>
               </provider>
@@ -47,8 +48,8 @@
           <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/index.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="94">
-                  <caret line="48" column="19" selection-start-line="48" selection-start-column="19" selection-end-line="48" selection-end-column="19" />
+                <state relative-caret-position="378">
+                  <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
                   <folding />
                 </state>
               </provider>
@@ -71,8 +72,8 @@
           <file leaf-file-name="base.css" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/style/base.css">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="756">
-                  <caret line="1735" column="5" selection-start-line="1735" selection-start-column="5" selection-end-line="1735" selection-end-column="5" />
+                <state relative-caret-position="378">
+                  <caret line="1509" column="19" selection-start-line="1509" selection-start-column="19" selection-end-line="1509" selection-end-column="19" />
                   <folding />
                 </state>
               </provider>
@@ -128,9 +129,15 @@
         <option value="$PROJECT_DIR$/src/owl-carousel/owl.carousel.css" />
         <option value="$PROJECT_DIR$/src/style/reset.css" />
         <option value="$PROJECT_DIR$/gulpfile.js" />
-        <option value="$PROJECT_DIR$/src/index.html" />
         <option value="$PROJECT_DIR$/src/owl-carousel/owl.theme.css" />
         <option value="$PROJECT_DIR$/src/style/base.css" />
+        <option value="$PROJECT_DIR$/src/scroll_to_top.js" />
+        <option value="$PROJECT_DIR$/src/js/navMenuButton.js" />
+        <option value="$PROJECT_DIR$/src/js/scrollToTop.js" />
+        <option value="$PROJECT_DIR$/src/js/navAnchor.js" />
+        <option value="$PROJECT_DIR$/src/js/headerSlider.js" />
+        <option value="$PROJECT_DIR$/src/js/blogSlider.js" />
+        <option value="$PROJECT_DIR$/src/index.html" />
       </list>
     </option>
   </component>
@@ -213,7 +220,7 @@
     <OptionsSetting value="true" id="Update" />
     <OptionsSetting value="true" id="Status" />
     <OptionsSetting value="true" id="Edit" />
-    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="2" id="Add" />
     <ConfirmationsSetting value="0" id="Remove" />
   </component>
   <component name="ProjectView">
@@ -301,6 +308,24 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="diplom" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="diplom" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
     </panes>
@@ -321,14 +346,15 @@
     <property name="restartRequiresConfirmation" value="false" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/pic" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/js" />
       <recent name="$PROJECT_DIR$/src" />
       <recent name="$PROJECT_DIR$/src/img" />
       <recent name="$PROJECT_DIR$/src/pic" />
       <recent name="$PROJECT_DIR$" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/pic" />
     </key>
   </component>
   <component name="RunManager" selected="Gulp.js.server">
@@ -610,7 +636,10 @@
       <workItem from="1473064929017" duration="10376000" />
       <workItem from="1473088287991" duration="4210000" />
       <workItem from="1473149373347" duration="5641000" />
-      <workItem from="1473160166899" duration="12540000" />
+      <workItem from="1473160166899" duration="13719000" />
+      <workItem from="1473237620556" duration="9337000" />
+      <workItem from="1473321920265" duration="23403000" />
+      <workItem from="1473407392799" duration="7249000" />
     </task>
     <task id="LOCAL-00001" summary="portfolio: added hover button">
       <created>1471006884734</created>
@@ -710,11 +739,25 @@
       <option name="project" value="LOCAL" />
       <updated>1472560493606</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="adaptive: added 640, 540, 480, 320">
+      <created>1473178148194</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1473178148194</updated>
+    </task>
+    <task id="LOCAL-00016" summary="adaptive: finished + added mobile nav-button">
+      <created>1473352570432</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1473352570432</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="292017000" />
+    <option name="totallyTimeSpent" value="333185000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -727,13 +770,13 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="63" y="24" width="1857" height="1056" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
-      <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1308615" sideWeight="0.41875" order="4" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1308615" sideWeight="0.58125" order="0" side_tool="false" content_ui="combo" x="63" y="24" width="1857" height="1056" />
+      <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1308615" sideWeight="0.43920335" order="4" side_tool="true" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1308615" sideWeight="0.5607966" order="0" side_tool="false" content_ui="combo" x="63" y="24" width="1857" height="1056" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32914045" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32914045" sideWeight="0.50599784" order="10" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32914045" sideWeight="0.49454743" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32914045" sideWeight="0.49454743" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32914045" sideWeight="0.49781898" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24972737" sideWeight="0.49580714" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32914045" sideWeight="0.4940022" order="9" side_tool="false" content_ui="tabs" />
@@ -815,7 +858,9 @@
     <MESSAGE value="adaptive: added 1280, 1024, 768" />
     <MESSAGE value="adaptive: added 640px" />
     <MESSAGE value="adaptive: added 240px" />
-    <option name="LAST_COMMIT_MESSAGE" value="adaptive: added 240px" />
+    <MESSAGE value="adaptive: added 640, 540, 480, 320" />
+    <MESSAGE value="adaptive: finished + added mobile nav-button" />
+    <option name="LAST_COMMIT_MESSAGE" value="adaptive: finished + added mobile nav-button" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -827,44 +872,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="10503">
-          <caret line="389" column="50" selection-start-line="389" selection-start-column="50" selection-end-line="389" selection-end-column="50" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/style/base.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1458">
-          <caret line="54" column="0" selection-start-line="54" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/style/base.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1458">
-          <caret line="54" column="0" selection-start-line="54" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/style/base.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1085,22 +1092,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/gulpfile.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="20" column="7" selection-start-line="20" selection-start-column="7" selection-end-line="20" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="94">
-          <caret line="48" column="19" selection-start-line="48" selection-start-column="19" selection-end-line="48" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/owl-carousel/owl.carousel.min.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1117,10 +1108,66 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/gulpfile.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="7" column="24" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/style/base.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="756">
-          <caret line="1735" column="5" selection-start-line="1735" selection-start-column="5" selection-end-line="1735" selection-end-column="5" />
+        <state relative-caret-position="378">
+          <caret line="1509" column="19" selection-start-line="1509" selection-start-column="19" selection-end-line="1509" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/navMenuButton.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="10" column="3" selection-start-line="10" selection-start-column="3" selection-end-line="10" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/scrollToTop.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/navAnchor.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="7" column="3" selection-start-line="7" selection-start-column="3" selection-end-line="7" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/headerSlider.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="351">
+          <caret line="13" column="3" selection-start-line="13" selection-start-column="3" selection-end-line="13" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/blogSlider.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="17" column="3" selection-start-line="17" selection-start-column="3" selection-end-line="17" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
           <folding />
         </state>
       </provider>

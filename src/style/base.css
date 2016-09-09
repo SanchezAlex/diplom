@@ -1100,6 +1100,9 @@ input:focus:-ms-input-placeholder      {text-indent: 500px; transition: text-ind
         top: -25%;
         font-size: 11px;
     }
+    .portfolio__gallery ul, .our__clients__logo {
+        margin: 0;
+    }
     .our__team__gallery {
         padding: 80px 0 90px;
     }
@@ -1504,6 +1507,7 @@ input:focus:-ms-input-placeholder      {text-indent: 500px; transition: text-ind
 	.menu {
 		right: 2%;
 		top: 15%;
+        z-index: 1;
 	}
 	.nav-menu.active span:nth-child(2) {
 		opacity: 0;
@@ -1527,7 +1531,7 @@ input:focus:-ms-input-placeholder      {text-indent: 500px; transition: text-ind
 		font-size: 14px;
 	}
 	.view p {
-		top: -11%;
+		top: -15%;
 	}
 	.quote__text {
 		text-align: justify;
