@@ -1,0 +1,17 @@
+{
+  "name": "diplom_builder",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "SanchezAlex"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/SanchezAlex/diplom",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

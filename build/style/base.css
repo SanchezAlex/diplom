@@ -32,6 +32,8 @@
 	left: 0;
 	right:0;
 	bottom: 0;
+	-webkit-transform: translate(0,-50%);
+	-ms-transform: translate(0,-50%);
 	transform: translate(0,-50%);
 }
 
@@ -73,6 +75,7 @@
 	width: 5px;
 	height: 5px;
 	border: 1px solid #f4c60b;
+	-webkit-border-radius: 3px;
 	border-radius: 3px;
 	display: inline-block;
 	margin-left: 20px;
@@ -89,6 +92,8 @@
     top: 50%;
     left: 0;
 	right: 0;
+	-webkit-transform: translate(0,-50%);
+	-ms-transform: translate(0,-50%);
 	transform: translate(0,-50%);
 	line-height: 1.1;
 	text-align: center;
@@ -113,6 +118,8 @@
 	bottom: 9%;
 	left: 0;
 	right: 0;
+	-webkit-transform: translate(0,-17%);
+	-ms-transform: translate(0,-17%);
 	transform: translate(0,-17%);
 	text-align: center;
 }
@@ -122,7 +129,22 @@ svg {
 }
 
 circle {
+  -webkit-animation: scroll 1.5s ease infinite;
   animation: scroll 1.5s ease infinite;
+}
+
+@-webkit-keyframes scroll {
+  0% { 
+    opacity: 0;
+    cy: 481;
+  }
+  33% {
+    opacity: 1;
+  }
+  100% { 
+    opacity: 0;
+    cy: 231;
+  }
 }
 
 @keyframes scroll {
@@ -196,6 +218,7 @@ h1 {
 	font-family: Raleway;
 	font-size: 24px;
 	font-weight: 700;
+	-webkit-transition: all 0.5s ease-out;
 	transition: all 0.5s ease-out;;
 	text-transform: uppercase;
 	position: relative;
@@ -274,9 +297,6 @@ h1 {
 }
     .view-first img {
         -webkit-transition: all 0.2s linear;
-        -moz-transition: all 0.2s linear;
-        -o-transition: all 0.2s linear;
-        -ms-transition: all 0.2s linear;
         transition: all 0.2s linear;
     }
 
@@ -300,17 +320,11 @@ h1 {
    opacity: 0;
    background-color: rgba(244, 198, 11, 0.4);
    -webkit-transition: all 0.4s ease-in-out;
-   -moz-transition: all 0.4s ease-in-out;
-   -o-transition: all 0.4s ease-in-out;
-   -ms-transition: all 0.4s ease-in-out;
    transition: all 0.4s ease-in-out;
 }
 
 .view-first:hover p {
    -webkit-transition-delay: 0.1s;
-   -moz-transition-delay: 0.1s;
-   -o-transition-delay: 0.1s;
-   -ms-transition-delay: 0.1s;
    transition-delay: 0.1s;
 }
 
@@ -319,33 +333,24 @@ h1 {
    filter: alpha(opacity=100);
    opacity: 1;
    -webkit-transform: translateY(0px);
-   -moz-transform: translateY(0px);
-   -o-transform: translateY(0px);
    -ms-transform: translateY(0px);
    transform: translateY(0px);
 }
 
 .view-first:hover img {
    -webkit-transform: scale(1.1,1.1);
-   -moz-transform: scale(1.1,1.1);
-   -o-transform: scale(1.1,1.1);
    -ms-transform: scale(1.1,1.1);
    transform: scale(1.1,1.1);
 }
 
 .view-first h2 {
     -webkit-transform: translateY(-100px);
-    -moz-transform: translateY(-100px);
-    -o-transform: translateY(-100px);
     -ms-transform: translateY(-100px);
     transform: translateY(-100px);
     -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=0)";
     filter: alpha(opacity=0);
     opacity: 1;
     -webkit-transition: all 0.2s ease-in-out;
-    -moz-transition: all 0.2s ease-in-out;
-    -o-transition: all 0.2s ease-in-out;
-    -ms-transition: all 0.2s ease-in-out;
     transition: all 0.2s ease-in-out;
 }
 
@@ -365,17 +370,12 @@ h1 {
 
 .view-first p {
    -webkit-transform: translateY(100px);
-   -moz-transform: translateY(100px);
-   -o-transform: translateY(100px);
    -ms-transform: translateY(100px);
    transform: translateY(100px);
    -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=0)";
    filter: alpha(opacity=0);
    opacity: 0;
    -webkit-transition: all 0.2s linear;
-   -moz-transition: all 0.2s linear;
-   -o-transition: all 0.2s linear;
-   -ms-transition: all 0.2s linear;
    transition: all 0.2s linear;
 }
 
@@ -399,9 +399,6 @@ h1 {
 
 .view-first img {
     -webkit-transition: all 0.2s linear;
-    -moz-transition: all 0.2s linear;
-    -o-transition: all 0.2s linear;
-    -ms-transition: all 0.2s linear;
     transition: all 0.2s linear;
 }
 
@@ -691,6 +688,9 @@ blockquote::after{
     position: relative;
 }
 .item__description {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
 	display: flex;
 	position: absolute;
 	top: 5px;
@@ -785,9 +785,22 @@ blockquote::after{
 	background: #ffffff;
     width: 24.8%;
     height: 240px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
     flex-direction: row;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
     align-items: center;
 }
 
@@ -797,6 +810,20 @@ blockquote::after{
 }
 
 .dark {
+  background-image: 
+    -webkit-gradient(
+      linear,
+      left top, left bottom,
+      from(rgba(0, 0, 0, 0.5)),
+      to(rgba(0, 0, 0, 0.5))
+    ),
+    url('../img/bg-pricing.png');
+  background-image: 
+    -webkit-linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url('../img/bg-pricing.png');
   background-image: 
     linear-gradient(
       rgba(0, 0, 0, 0.5),
@@ -870,14 +897,14 @@ blockquote::after{
     color: #000;
 }
 
-input::-webkit-input-placeholder       {text-indent: 0;   transition: text-indent 0.3s ease; color: #fff}
-input::-moz-placeholder                {text-indent: 0;   transition: text-indent 0.3s ease; color: #fff}
-input:-moz-placeholder                 {text-indent: 0;   transition: text-indent 0.3s ease; color: #fff}
-input:-ms-input-placeholder            {text-indent: 0;   transition: text-indent 0.3s ease; color: #fff}
-input:focus::-webkit-input-placeholder {text-indent: 500px; transition: text-indent 0.3s ease; color: #fff}
-input:focus::-moz-placeholder          {text-indent: 500px; transition: text-indent 0.3s ease; color: #fff}
-input:focus:-moz-placeholder           {text-indent: 500px; transition: text-indent 0.3s ease; color: #fff}
-input:focus:-ms-input-placeholder      {text-indent: 500px; transition: text-indent 0.3s ease; color: #fff}
+input::-webkit-input-placeholder       {text-indent: 0;   -webkit-transition: text-indent 0.3s ease;   transition: text-indent 0.3s ease; color: #fff}
+input::-moz-placeholder                {text-indent: 0;   -webkit-transition: text-indent 0.3s ease;   transition: text-indent 0.3s ease; color: #fff}
+input:-moz-placeholder                 {text-indent: 0;   -webkit-transition: text-indent 0.3s ease;   transition: text-indent 0.3s ease; color: #fff}
+input:-ms-input-placeholder            {text-indent: 0;   -webkit-transition: text-indent 0.3s ease;   transition: text-indent 0.3s ease; color: #fff}
+input:focus::-webkit-input-placeholder {text-indent: 500px; -webkit-transition: text-indent 0.3s ease; transition: text-indent 0.3s ease; color: #fff}
+input:focus::-moz-placeholder          {text-indent: 500px; -webkit-transition: text-indent 0.3s ease; transition: text-indent 0.3s ease; color: #fff}
+input:focus:-moz-placeholder           {text-indent: 500px; -webkit-transition: text-indent 0.3s ease; transition: text-indent 0.3s ease; color: #fff}
+input:focus:-ms-input-placeholder      {text-indent: 500px; -webkit-transition: text-indent 0.3s ease; transition: text-indent 0.3s ease; color: #fff}
 
 
 .footer {
@@ -1493,8 +1520,6 @@ input:focus:-ms-input-placeholder      {text-indent: 500px; transition: text-ind
 		margin: 3px;
 		background: #f4c60b;
 		-webkit-transition: all .3s ease-in;
-		-moz-transition: all .3s ease-in;
-		-o-transition: all .3s ease-in;
 		transition: all .3s ease-in;
 	}
 	.menu {
@@ -1508,15 +1533,13 @@ input:focus:-ms-input-placeholder      {text-indent: 500px; transition: text-ind
 	.nav-menu.active span:first-child {
 		top: 6px;
 		-webkit-transform: rotate(-135deg);
-		-moz-transform: rotate(-135deg);
-		-o-transform: rotate(-135deg);
+		-ms-transform: rotate(-135deg);
 		transform: rotate(-135deg);
 	}
 	.nav-menu.active span:last-child {
 		top: -6px;
 		-webkit-transform: rotate(135deg);
-		-moz-transform: rotate(135deg);
-		-o-transform: rotate(135deg);
+		-ms-transform: rotate(135deg);
 		transform: rotate(135deg);
 	}
 	.view h2 {

@@ -1,0 +1,1 @@
+$(document).ready(function(){$(".nav-menu").on("click",function(){$(this).hasClass("active")?$(".box-menu").fadeOut(300):$(".box-menu").fadeIn(300),$(".nav-menu").toggleClass("active")})});
