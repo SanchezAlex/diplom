@@ -5,7 +5,7 @@ $(document).ready(function() {
         loop: true,
         stopOnHover: true,
         rewindNav: true,
-        autoHeight: false,
+        autoHeight: true,
         slideSpeed: 500,
         paginationSpeed: 1000,
         rewindSpeed: 1000,

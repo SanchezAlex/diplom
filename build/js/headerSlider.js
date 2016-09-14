@@ -1,1 +1,1 @@
-$(document).ready(function(){$("#owl-example").owlCarousel({autoPlay:!0,loop:!0,stopOnHover:!0,rewindNav:!0,autoHeight:!1,slideSpeed:500,paginationSpeed:1e3,rewindSpeed:1e3,singleItem:!0})});
+$(document).ready(function(){$("#owl-example").owlCarousel({autoPlay:!0,loop:!0,stopOnHover:!0,rewindNav:!0,autoHeight:!0,slideSpeed:500,paginationSpeed:1e3,rewindSpeed:1e3,singleItem:!0})});

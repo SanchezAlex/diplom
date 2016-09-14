@@ -1,28 +1,25 @@
-var gulp = require('gulp');
-var autoprefixer = require('gulp-autoprefixer');
-var browserSync = require('browser-sync').create();
-var prettify = require('gulp-html-prettify');
-var csso = require('gulp-csso');
-var csscomb = require('gulp-csscomb');
-var sourcemaps=require('gulp-sourcemaps');
-var uglify = require('gulp-uglify');
-var pump = require('pump');
-var concat = require('gulp-concat');
-var imagemin = require('gulp-imagemin');
+'use strict';
 
-gulp.task('default', function() {
+const gulp = require('gulp');
+const autoprefixer = require('gulp-autoprefixer');
+const browserSync = require('browser-sync').create();
+const prettify = require('gulp-html-prettify');
+const csso = require('gulp-csso');
+const csscomb = require('gulp-csscomb');
+const sourcemaps=require('gulp-sourcemaps');
+const uglify = require('gulp-uglify');
+const pump = require('pump');
+const concat = require('gulp-concat');
+const imagemin = require('gulp-imagemin');
+const newer = require ('gulp-newer');
 
+gulp.task('browser-sync', function() {
     browserSync.init({
         server: {
             baseDir: "./src"
         }
     });
-
-    gulp.watch("./src/index.html").on('change', browserSync.reload);
-    gulp.watch("./src/style/**/*.css").on('change', browserSync.reload);
-    gulp.watch("./src/js/*.js").on('change', browserSync.reload);
-    gulp.watch("./src/pic/*").on('change', browserSync.reload);
-    gulp.watch("./src/img/*").on('change', browserSync.reload);
+    gulp.watch("./src/**/*.*").on('change', browserSync.reload);
 });
 
 gulp.task('html-prettify', function() {
@@ -77,10 +74,14 @@ gulp.task('concat-js', function() {
 });
 
 gulp.task('minify-img', function() {
-    gulp.src('./src/img/*')
+    gulp.src('./src/img/**')
+        .pipe(newer('src'))
         .pipe(imagemin())
         .pipe(gulp.dest('./build/img'));
-    gulp.src('./src/pic/*')
+    gulp.src('./src/pic/**')
+        .pipe(newer('src'))
         .pipe(imagemin())
         .pipe(gulp.dest('./build/pic'));
 });
+
+gulp.task('build', ['html-prettify', 'prefixer-css', 'comb-css', 'minify-js', 'concat-js', 'minify-img']);
