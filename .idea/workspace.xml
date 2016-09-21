@@ -1,14 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ba67ddec-ff07-4094-970e-281b8027a438" name="Default" comment="portfolio &amp; etc.: fixed 100% width  and others.">
+    <list default="true" id="ba67ddec-ff07-4094-970e-281b8027a438" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/favicon.ico" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/favicon.ico" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/index.html" afterPath="$PROJECT_DIR$/build/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/style/base.css" afterPath="$PROJECT_DIR$/build/style/base.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/style/reset.css" afterPath="$PROJECT_DIR$/build/style/reset.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/index.html" afterPath="$PROJECT_DIR$/src/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/style/base.css" afterPath="$PROJECT_DIR$/src/style/base.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/style/reset.css" afterPath="$PROJECT_DIR$/src/style/reset.css" />
     </list>
     <ignored path="diplom.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -98,7 +94,7 @@
       </split-first>
       <split-second>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="base.css" pinned="false" current-in-tab="false">
+          <file leaf-file-name="base.css" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/style/base.css">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="182">
@@ -118,7 +114,7 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="base.css" pinned="false" current-in-tab="true">
+          <file leaf-file-name="base.css" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/build/style/base.css">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="219">
@@ -384,15 +380,16 @@
     <property name="list.type.of.created.stylesheet" value="CSS" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src" />
+      <recent name="$PROJECT_DIR$/build" />
+      <recent name="$PROJECT_DIR$/src/pic" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/build" />
       <recent name="$PROJECT_DIR$/src/img" />
       <recent name="$PROJECT_DIR$/src" />
       <recent name="$PROJECT_DIR$/src/js" />
-      <recent name="$PROJECT_DIR$/src/pic" />
-      <recent name="$PROJECT_DIR$" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/build" />
       <recent name="$PROJECT_DIR$/src/pic" />
     </key>
   </component>
@@ -693,7 +690,7 @@
       <workItem from="1474313135051" duration="1505000" />
       <workItem from="1474317044519" duration="95000" />
       <workItem from="1474359070520" duration="18528000" />
-      <workItem from="1474456915017" duration="6432000" />
+      <workItem from="1474456915017" duration="7159000" />
     </task>
     <task id="LOCAL-00001" summary="portfolio: added hover button">
       <created>1471006884734</created>
@@ -849,11 +846,18 @@
       <option name="project" value="LOCAL" />
       <updated>1473863210278</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="portfolio &amp; etc.: fixed 100% width  and others.">
+      <created>1474468927316</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1474468927316</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="413695000" />
+    <option name="totallyTimeSpent" value="414422000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -866,9 +870,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="63" y="24" width="1857" height="1056" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
-      <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1308615" sideWeight="0.5125786" order="4" side_tool="true" content_ui="tabs" />
+      <window_info id="Gulp" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1308615" sideWeight="0.5125786" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1308615" sideWeight="0.4874214" order="0" side_tool="false" content_ui="combo" x="63" y="24" width="1857" height="1056" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32914045" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32914045" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -1265,18 +1269,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/style/base.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="1935" column="24" selection-start-line="1935" selection-start-column="24" selection-end-line="1935" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/build/style/base.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="219">
           <caret line="1965" column="25" selection-start-line="1965" selection-start-column="25" selection-end-line="1965" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/style/base.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="182">
+          <caret line="1935" column="24" selection-start-line="1935" selection-start-column="24" selection-end-line="1935" selection-end-column="24" />
           <folding />
         </state>
       </provider>
