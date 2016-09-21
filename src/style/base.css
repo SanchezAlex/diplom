@@ -3,9 +3,11 @@
 	clear: both;
 	display: table;
 	overflow: hidden;
+	visibility: hidden;
 }
 
 .container {
+	width: 100%;
 	max-width: 1020px;
 	margin: 0 auto;
 	text-align: center; 
@@ -45,7 +47,8 @@
 	display: block;
 	position: absolute;
 	top: 3.34%;
-	left: 13%;	
+	left: 13%;
+	width: 2.8%;
 }
 .box-menu {
 	display: block;
@@ -254,15 +257,15 @@ h1 {
 }
 
 .portfolio__gallery ul {
-	list-style-type: none;
-	margin: 0 -28.44%;
+	display: inline-block;
+	overflow: hidden;
 }
 
 .view {
     float: left;
  	position: relative;
     overflow: hidden;
-	max-width: 100%;
+	width: 25%;
 }
 
 .view-first:hover .mask {
@@ -420,8 +423,9 @@ h1 {
 }
 
 .our__team__gallery--foto {
+	width: 27.333%;
 	float: left;
-	padding: 0 30px;
+	padding: 0 3%;
 }
 
 .our__team__gallery h3 {
@@ -460,7 +464,7 @@ h1 {
 
 .our__skills__block li {
 	float: left;
-	padding: 0 8.29%;
+	width: 33.333%;;
 }
 
 .our__skills__block  p {
@@ -571,16 +575,26 @@ blockquote::after{
 }
 
 .services__block ul {
-	margin: 0 -6.1%;
 	text-align: center;
 }
 
 .services__block li {
 	float: left;
-	width: 20.7%;
-    padding: 0 6.29%;
+	width: 25%;
+    padding: 0 4.16%;
 }
-
+.services__block li:first-child div {
+	width: 54.908%;
+	margin: 0 auto;
+}
+.services__block li:nth-child(2) div {
+	width: 38.04%;
+	margin: 0 auto;
+}
+.services__block li:last-child div {
+	width: 49.81%;
+	margin: 0 auto;
+}
 .services__block h3 {
 	padding-top: 74px;
 	color: #000;
@@ -760,13 +774,13 @@ blockquote::after{
 }
 .owl-prev {
 	position: absolute;
-	left: -9%;
+	left: 0;
 	top: -330px;
 }
 
 .owl-next {
 	position: absolute;
-	right: -9%;
+	right: 0;
 	top: -330px;
 }
 
@@ -775,8 +789,8 @@ blockquote::after{
 }
 
 .our__clients__logo {
-	display: block;
-	margin: 0 -28.44%;
+	display: inline-block;
+	width: 100%;
 	padding-top: 116px;
 }
 
@@ -886,6 +900,8 @@ input:focus:-ms-input-placeholder      {text-indent: 500px; transition: text-ind
 
 .footer__logo {
 	padding-top: 53px;
+	width: 3.923%;
+	margin: 0 auto;
 }
 
 .footer__title {
@@ -904,15 +920,21 @@ input:focus:-ms-input-placeholder      {text-indent: 500px; transition: text-ind
 	font-size: 12px;
 	font-style: italic;
 }
-
 .footer__social {
 	padding-top: 64px;
+	display: flex;
+	align-content: center;
+	justify-content: center;
 }
-
-.footer__social img {
+.footer__social div {
 	padding: 0 7px;
 }
-
+.google, .twitter  {
+	width: 20px;
+}
+.facebook {
+	width: 10px;
+}
 .footer__copyright {
 	padding-top: 38px;
 	padding-bottom: 19px;
@@ -951,12 +973,15 @@ input:focus:-ms-input-placeholder      {text-indent: 500px; transition: text-ind
 	bottom: 17px;
 }
 
+@media screen and (max-width: 1440px) {
+	.view p {
+		top: 10%;
+	}
+}
+
 @media screen and (max-width: 1280px) {
-    .menu {
-        right: 6%;
-    }
-	.portfolio__gallery ul, .our__clients__logo {
-		margin: 0 -12.74%;
+	.menu {
+		right: 6%;
 	}
 	.view {
 		width: 25%;
@@ -970,292 +995,318 @@ input:focus:-ms-input-placeholder      {text-indent: 500px; transition: text-ind
 }
 
 @media screen and (max-width: 1024px) {
-    .menu {
-        right: 5%;
-    }
-    .menu__item {
-        font-size: 14px;
-    }
+	.menu {
+		right: 5%;
+	}
+	.menu__item {
+		font-size: 14px;
+	}
 	.about__text {
-        padding: 100px 40px;
-    }
+		padding: 100px 40px;
+	}
+	.title__h1 {
+		padding-top: 80px;
+	}
+	.view h2 {
+		margin: 40px 0 0 0;
+		padding: 15px;
+	}    .view p {
+			 top: -5%;
+			 line-height: 1.1;
+		 }
+	blockquote {
+		margin: 0;
+		padding: 140px 40px 0;
+	}
+	blockquote::before {
+		left: 3.55%;
+		top: 63%;
+	}
+	blockquote::after {
+		right: 4%;
+	}
+	.quote__text {
+		font-size: 28px;
+		text-align: center;
+	}
+	.quote__author {
+		margin: 0;
+		padding: 63px 41px 74px 0;
+	}
+	.owl-prev {
+		left: 0;
+	}
+	.owl-next {
+		right: 0;
+	}
+	.scrollToTop {
+		right: 40px;
+	}
+	.btn {
+		padding: 50px 0;
+	}
+	.btn__text a {
+		padding: 20px 40px;
+	}
+	.our__clients__logo li {
+		height: 180px;
+	}
+	.pricing__main {
+		margin: 0;
+	}
+	.services__block ul {
+		margin: 0;
+	}
+}
 
-    .title__h1 {
-        padding-top: 80px;
-    }
-    .portfolio__gallery ul, .our__clients__logo {
-        margin: 0 -0.19%;
-    }
-    .view h2 {
-        margin: 40px 0 0 0;
-        padding: 15px;
-    }    .view p {
-        top: -5%;
-        line-height: 1.1;
-    }
-    blockquote {
-        margin: 0;
-        padding: 140px 40px 0;
-    }
-    blockquote::before {
-        left: 3.55%;
-        top: 63%;
-    }
-    blockquote::after {
-        right: 4%;
-    }
-    .quote__text {
-        font-size: 28px;
-        text-align: center;
-    }
-    .quote__author {
-        margin: 0;
-        padding: 63px 41px 74px 0;
-    }
-    .owl-prev {
-        left: 0;
-    }
-    .owl-next {
-        right: 0;
-    }
-    .scrollToTop {
-        right: 40px;
-    }
-    .btn {
-        padding: 0 0 70px;
-    }
-    .btn__text a {
-        padding: 20px 40px;
-    }
-    .our__clients__logo li {
-        height: 180px;
-    }
-    .pricing__main {
-        margin: 0;
-    }
-    .services__block ul {
-        margin: 0;
-    }
+@media screen and (max-width: 960px) {
+	.view p {
+		top: -14%;
+	}
+	.quote__text {
+		font-size: 26px;
+	}
+	blockquote::before {
+		left: 2%;
+		top: 60%;
+	}
+	blockquote::after {
+		right: 2%;
+		top: 80%;
+	}
+	.quote__author {
+		margin: 0;
+		padding: 58px 78px 68px 0;
+	}
+	.item__description {
+		top: 1%;
+		left: 12%;
+		right: 12%;
+	}
+	.our__clients__logo li {
+		width: 24.7%;
+	}
+	.contact__us__form textarea {
+		width: 45.1%;
+	}
 }
 
 @media screen and (max-width: 768px) {
-    .header__logo {
-        left: 7%;
-    }
-    .menu {
-        right: 4%;
-    }
-    .menu__item {
-        font-size: 12px;
-        padding-right: 13px;
-    }
-    .menu__item:after {
-        margin-left: 13px;
-    }
-    .header__title {
-        font-size: 55px;
-    }
-    .header__description {
-        font-size: 18px;
-    }
-    .header__scroll {
-        bottom: 10%;
-    }
-    .header__scroll--description {
-        padding: 2px;
-        font-size: 15px;
-    }
+	.header__logo {
+		left: 7%;
+		width: 5%;
+	}
+	.menu {
+		right: 4%;
+	}
+	.menu__item {
+		font-size: 12px;
+		padding-right: 13px;
+	}
+	.menu__item:after {
+		margin-left: 13px;
+	}
+	.header__title {
+		font-size: 55px;
+	}
+	.header__description {
+		font-size: 18px;
+	}
+	.header__scroll {
+		bottom: 10%;
+	}
+	.header__scroll--description {
+		padding: 2px;
+		font-size: 15px;
+	}
 	.owl-pagination {
 		top: 94%;
 	}
-    h1 {
-        font-size: 37px;
-    }
-    .title__h1 {
-        padding-top: 60px;
-    }
-    .about__text {
-        padding: 50px 20px;
-    }
-    .btn__text a {
-        padding: 15px 30px;
-        font-size: 20px;
-    }
-    .portfolio__description p {
-        font-size: 20px;
-    }
-    .portfolio__sorted button {
-        padding: 15px 20px;
-    }
-    .view h2 {
-        margin: 50px 0 0 0;
-        padding: 12px;
-        font-size: 17px;
-    }
-    .view p {
-        top: -25%;
-        font-size: 11px;
-    }
-    .portfolio__gallery ul, .our__clients__logo {
-        margin: 0;
-    }
-    .our__team__gallery {
-        padding: 80px 0 90px;
-    }
-    .our__team__gallery ul {
-        margin: 0;
-        padding: 0 4%;
-    }
-    .our__team__gallery--foto {
-        padding: 10px;
-        float: none;
-    }
-    .our__team__gallery--foto span {
-        padding-top: 10px;
-    }
-    .our__skills__block {
-        padding-top: 100px;
-    }
-    .our__skills__block ul {
-        padding: 0;
-    }
-    .our__skills__block li {
-        padding: 0 6.2%;
-    }
-    .quote__text {
-        font-size: 21px;
-    }
-    .quote__author {
-        margin: 0;
-        padding: 43px 41px 64px 0;
-        font-size: 20px;
-    }
-    .services__block {
-        padding: 90px 0;
-    }
-    .services__block h3 {
-        font-size: 22px;
-        padding-top: 50px;
-    }
-    .services__block li:nth-child(2) h3 {
-         padding-top: 65px;
-    }
-    .pricing__main {
-        padding: 70px 7.72% 100px;
-    }
-    .pricing__main--btn a {
-        padding: 20px 40px;
-    }
-    .pricing__main--features {
-        padding: 40px 16.9% 0;
-    }
-    .item__description {
-        left: 72px;
-        right: 72px;
-    }
-    .owl-next {
-        right: 10px;
-    }
-    .owl-prev {
-        left: 10px;
-    }
-    .our__clients__logo li {
-        width: 24.7%;
-        height: 150px;
-    }
-    .title__h1__contact h1 {
-        font-size: 37px;
-    }
-    .contact__us__form textarea {
-        width: 47%;
-    }
-    .contact__us__button {
-        margin-right: 32.4%;
-    }
+	h1 {
+		font-size: 37px;
+	}
+	.title__h1 {
+		padding-top: 60px;
+	}
+	.about__text {
+		padding: 50px 20px;
+	}
+	.btn__text a {
+		padding: 15px 30px;
+		font-size: 20px;
+	}
+	.portfolio__description p {
+		font-size: 20px;
+	}
+	.portfolio__sorted button {
+		padding: 15px 20px;
+	}
+	.view h2 {
+		margin: 50px 0 0 0;
+		padding: 12px;
+		font-size: 17px;
+	}
+	.view p {
+		top: -25%;
+		font-size: 11px;
+	}
+	.our__team__gallery {
+		padding: 80px 0 90px;
+	}
+	.our__team__gallery ul {
+		margin: 0;
+		padding: 0 4%;
+	}
+	.our__team__gallery h3 {
+		font-size: 17px;
+	}
+	.our__team__gallery--foto span {
+		padding-top: 10px;
+		font-size: 15px;
+	}
+	.our__skills__block {
+		padding-top: 100px;
+	}
+	.our__skills__block ul {
+		padding: 0;
+	}
+	.quote__text {
+		font-size: 21px;
+	}
+	.quote__author {
+		margin: 0;
+		padding: 43px 41px 64px 0;
+		font-size: 20px;
+	}
+	.services__block {
+		padding: 90px 0;
+	}
+	.services__block h3 {
+		font-size: 22px;
+		padding-top: 50px;
+	}
+	.services__block li > div {
+		max-width: 30%;
+	}
+	.services__block li:nth-child(2) h3 {
+		padding-top: 65px;
+	}
+	.pricing__main {
+		padding: 70px 7.72% 100px;
+	}
+	.pricing__main--btn a {
+		padding: 20px 40px;
+	}
+	.pricing__main--features {
+		padding: 40px 16.9% 0;
+	}
+	.item__description {
+		left: 72px;
+		right: 72px;
+	}
+	.owl-next {
+		right: 10px;
+	}
+	.owl-prev {
+		left: 10px;
+	}
+	.our__clients__logo li {
+		width: 24.7%;
+		height: 150px;
+	}
+	.title__h1__contact h1 {
+		font-size: 37px;
+	}
+	.contact__us__form textarea {
+		width: 47%;
+	}
+	.contact__us__button {
+		margin-right: 32.4%;
+	}
 }
 
 @media screen and (max-width: 640px) {
-    .header__title {
-        font-size: 45px;
-    }
-    .header__description {
-        font-size: 16px;
-    }
+	.header__title {
+		font-size: 45px;
+	}
+	.header__description {
+		font-size: 16px;
+	}
 	.menu li {
 		padding: 0 4px;
 	}
 	.menu li:after {
 		margin-left: 10px;
 	}
-    svg {
-        width: 20px;
-        height: 34px;
-    }
-    .header__scroll--description {
-        padding: 4px 0;
-        font-size: 11px;
-    }
-    .menu__item {
-        font-size: 10px;
-        padding-right: 10px;
-    }
-    .owl-page span {
-        width: 11px;
-        height: 11px;
-    }
-    .portfolio__description p {
-        font-size: 17px;
-    }
-    .view {
-        width: 50%;
-    }
-    .view h2 {
-        margin: 20px 0 0 0;
-        padding: 20px;
-        font-size: 24px;
-    }
-    .view p {
-        font-size: 15px;
-        top: 20%;
-        line-height: 1.4;
-    }
-    .our__skills__block li {
-        width: 33.3%;
-        padding: 0;
-    }
-    blockquote {
-        padding: 105px 20px 0;
-    }
-    .quote__text {
-        font-size: 16px;
-    }
-    blockquote:before,
-    blockquote:after {
-        font-size: 40px;
-    }
-    blockquote:before {
-        left: 7.55%;
-        top: 65%;
-    }
-    blockquote:after {
-        right: 7%;
-        top: 82%;
-    }
-    .services__block {
-        padding: 65px 0;
-    }
-    .services__block p {
-        padding-top: 24px;
-    }
-    .services__block li {
-        float: none;
-        margin: 0 auto;
-        padding: 20px 10px;
-        width: auto;
-    }
-    .pricing__main {
-        padding: 70px 0 100px;
-    }
+	svg {
+		width: 20px;
+		height: 34px;
+	}
+	.header__scroll--description {
+		padding: 4px 0;
+		font-size: 11px;
+	}
+	.menu__item {
+		font-size: 10px;
+		padding-right: 10px;
+	}
+	.owl-page span {
+		width: 11px;
+		height: 11px;
+	}
+	.portfolio__description p {
+		font-size: 17px;
+	}
+	.view {
+		width: 50%;
+	}
+	.view h2 {
+		margin: 20px 0 0 0;
+		padding: 20px;
+		font-size: 24px;
+	}
+	.view p {
+		font-size: 15px;
+		top: 20%;
+		line-height: 1.4;
+	}
+	.our__skills__block li {
+		width: 33.3%;
+		padding: 0;
+	}
+	blockquote {
+		padding: 105px 20px 0;
+	}
+	.quote__text {
+		font-size: 16px;
+	}
+	blockquote:before,
+	blockquote:after {
+		font-size: 40px;
+	}
+	blockquote:before {
+		left: 7.55%;
+		top: 65%;
+	}
+	blockquote:after {
+		right: 7%;
+		top: 82%;
+	}
+	.services__block {
+		padding: 65px 0;
+	}
+	.services__block p {
+		padding-top: 24px;
+	}
+	.services__block li {
+		float: none;
+		margin: 0 auto;
+		padding: 20px 10px;
+		width: auto;
+	}
+	.pricing__main {
+		padding: 70px 0 100px;
+	}
 	.item__description {
 		left: 13%;
 		right: 13%;
@@ -1267,15 +1318,15 @@ input:focus:-ms-input-placeholder      {text-indent: 500px; transition: text-ind
 		left: 0;
 	}
 	.our__clients__logo li {
-		width: 49.6%;
+		width: 24.6%;
 		height: 147px;
 	}
-    .contact__us__form textarea {
-        width: 48.9%;
-    }
-    .contact__us__button {
-        margin-right: 31.4%;
-    }
+	.contact__us__form textarea {
+		width: 48.9%;
+	}
+	.contact__us__button {
+		margin-right: 31.4%;
+	}
 }
 
 @media screen and (max-width: 540px) {
@@ -1288,12 +1339,12 @@ input:focus:-ms-input-placeholder      {text-indent: 500px; transition: text-ind
 		top: 0;
 		line-height: 1.2;
 	}
-    .pricing__main--features {
-        padding: 25px 15px 0;
-    }
-    .pricing__main--btn a {
-        padding: 20px 32px;
-    }
+	.pricing__main--features {
+		padding: 25px 15px 0;
+	}
+	.pricing__main--btn a {
+		padding: 20px 32px;
+	}
 	.item__description {
 		left: 15px;
 		right: 15px;
@@ -1304,159 +1355,165 @@ input:focus:-ms-input-placeholder      {text-indent: 500px; transition: text-ind
 	.owl-next {
 		right: 18px;
 	}
-    .quote__text {
-        font-size: 14px;
-    }
-    blockquote:before {
-        left: 5.55%;
-        top: 62%;
-    }
-    blockquote:after {
-        right: 5%;
-        top: 84%;
-    }
-    .contact__us__form textarea {
-        width: 50.9%;
-    }
-    .contact__us__button {
-        margin-right: 30%;
-    }
+	.quote__text {
+		font-size: 14px;
+	}
+	blockquote:before {
+		left: 3%;
+		top: 62%;
+	}
+	blockquote:after {
+		right: 3%;
+		top: 84%;
+	}
+	.pricing__main--header {
+		padding: 16px;
+	}
+	.pricing__main--price {
+		padding: 59px 24.72% 0;
+	}
+	.contact__us__form textarea {
+		width: 50.9%;
+	}
+	.contact__us__button {
+		margin-right: 30%;
+	}
 }
 
 @media screen and (max-width: 480px) {
-    .header__title {
-        font-size: 35px;
-    }
-    .header__description {
-        font-size: 12px;
-    }
-    svg {
-        width: 15px;
-        height: 24px;
-    }
-    .header__scroll--description {
-		padding: 5px 0 0;
-        font-size: 9px;
+	.header__title {
+		font-size: 35px;
 	}
-    h1 {
-        font-size: 30px;
-    }
-    .title__h1 {
-        padding-top: 45px;
-    }
-    .about__text {
-        padding: 40px 15px;
-        font-size: 15px;
-        line-height: 1.6;
-    }
-    .btn__text a {
-        font-size: 14px;
-        padding: 12px 24px;
-    }
-    .portfolio__description p {
-        font-size: 14px;
-    }
-    .portfolio__sorted a {
-        font-size: 12px;
-    }
-    .portfolio__sorted button {
+	.header__description {
+		font-size: 12px;
+	}
+	svg {
+		width: 15px;
+		height: 24px;
+	}
+	.header__scroll--description {
+		padding: 5px 0 0;
+		font-size: 9px;
+	}
+	h1 {
+		font-size: 30px;
+	}
+	.title__h1 {
+		padding-top: 45px;
+	}
+	.about__text {
+		padding: 40px 15px;
+		font-size: 15px;
+		line-height: 1.6;
+	}
+	.btn__text a {
+		font-size: 14px;
+		padding: 12px 24px;
+	}
+	.portfolio__description p {
+		font-size: 14px;
+	}
+	.portfolio__sorted a {
+		font-size: 12px;
+	}
+	.portfolio__sorted button {
 		margin: 0 -0.6%;
-        padding: 5px 15px;
-    }
-    .view h2 {
+		padding: 5px 15px;
+	}
+	.view h2 {
 		margin: 40px 0 0 0;
-        font-size: 17px;
+		font-size: 17px;
 	}
 	.view p {
 		font-size: 12px;
 		top: -4%;
 	}
-    .btn:nth-of-type(2) {
-        padding: 40px 0;
-    }
+	.btn:nth-of-type(2) {
+		padding: 40px 0;
+	}
 	.our__team__gallery h3 {
 		font-size: 20px;
 		padding-top: 25px;
 	}
-    .our__skills__block {
-        padding-top: 60px;
-    }
-    .our__skills__block li {
-        float: none;
-        width: auto;
-    }
-    .graph-title {
-        margin-top: 90px;
-        padding-bottom: 70px;
-        font-size: 17px;
-    }
-    blockquote:before {
-        left: 3.55%;
-        top: 65%;
-    }
-    blockquote:after {
-        right: 3.5%;
-        top: 83%;
-    }
-    .quote__text {
-        font-size: 13px;
-    }
-    .quote__author {
-        padding: 26px 37px 64px 0;
-        font-size: 16px;
-    }
-    .services__block p {
-        font-size: 13px;
-    }
+	.our__skills__block {
+		padding-top: 60px;
+	}
+	.our__skills__block li {
+		float: none;
+		width: auto;
+	}
+	.graph-title {
+		margin-top: 90px;
+		padding-bottom: 70px;
+		font-size: 17px;
+	}
+	blockquote:before {
+		left: 2%;
+		top: 65%;
+	}
+	blockquote:after {
+		right: 2%;
+		top: 83%;
+	}
+	.quote__text {
+		font-size: 13px;
+	}
+	.quote__author {
+		padding: 26px 37px 64px 0;
+		font-size: 16px;
+	}
+	.services__block p {
+		font-size: 13px;
+	}
 	.pricing__main--features {
 		padding: 20px 28.9% 0;
 	}
-    .pricing__main li {
-        float: none;
-        width: auto;
-        margin: 0 17.98% 5%;
-    }
-    .pricing__main--btn a {
-        padding: 20px 55px;
-    }
-    .item__description {
-        left: 25%;
-        right: 25%;
-    }
-    .our__clients__logo {
-        padding-top: 60px;
-    }
-    .our__clients__logo li {
-        width: 49.58%;
-    }
+	.pricing__main li {
+		float: none;
+		width: auto;
+		margin: 0 17.98% 5%;
+	}
+	.pricing__main--btn a {
+		padding: 20px 55px;
+	}
+	.item__description {
+		left: 25%;
+		right: 25%;
+	}
+	.our__clients__logo {
+		padding-top: 60px;
+	}
+	.our__clients__logo li {
+		width: 49.58%;
+	}
 	.title__h1__contact h1 {
 		font-size: 30px;
 	}
 	.contact__us__form {
 		padding: 60px 0;
 	}
-    .contact__us__button {
-        margin: 10px;
-    }
-    .contact__us__form input {
-        width: 28%;
+	.contact__us__button {
+		margin: 10px;
+	}
+	.contact__us__form input {
+		width: 28%;
 		padding: 10px;
-    }
-    .contact__us__form textarea {
-        width: 62.3%;
-    }
+	}
+	.contact__us__form textarea {
+		width: 62.3%;
+	}
 	.footer__logo {
 		padding-top: 30px;
 	}
 	.footer__social {
 		padding-top: 30px;
 	}
-    .scrollToTop {
+	.scrollToTop {
 		width: 69px;
 		height: 69px;
 		right: 0;
 		background: url(../pic/top.png) no-repeat 16px 5px;
-    }
+	}
 	.scrollToTop span {
 		font-size: 12px;
 		bottom: 35px;
@@ -1482,7 +1539,7 @@ input:focus:-ms-input-placeholder      {text-indent: 500px; transition: text-ind
 		position: absolute;
 		top: 3%;
 		right: 3%;
-        padding: 3px;
+		padding: 3px;
 		cursor: pointer;
 	}
 	.nav-menu span {
@@ -1500,7 +1557,7 @@ input:focus:-ms-input-placeholder      {text-indent: 500px; transition: text-ind
 	.menu {
 		right: 2%;
 		top: 15%;
-        z-index: 1;
+		z-index: 1;
 	}
 	.nav-menu.active span:nth-child(2) {
 		opacity: 0;
@@ -1640,193 +1697,193 @@ input:focus:-ms-input-placeholder      {text-indent: 500px; transition: text-ind
 }
 
 @media screen and (max-width: 320px) {
-    .header__logo {
-        left: 2%;
-    }
+	.header__logo {
+		left: 2%;
+	}
 	.menu li {
 		padding: 3px;
 	}
-    .menu__item {
-        font-size: 8px;
-        padding-right: 2px;
-    }
-    .menu__item:after {
-        margin-left: 5px;
-        width: 3px;
-        height: 3px;
-    }
-    .header__title {
-        font-size: 25px;
-    }
-    svg {
-        width: 13px;
-        height: 20px;
-    }
-    .header__scroll--description {
-        font-size: 7px;
-    }
-    .header__scroll {
-        bottom: 7%;
-    }
-    .owl-page span {
-        margin: 0 3px 3px;
-        width: 5px;
-        height: 5px;
-    }
-    .title__h1 {
-        padding-top: 30px;
-    }
-    h1 {
-        font-size: 25px;
-    }
-    .about__text {
-        padding: 30px 10px;
-        font-size: 14px;
-    }
-    .btn {
-        padding: 0 0 40px;
-    }
-    .btn__text a {
-        font-size: 12px;
-        padding: 10px 20px;
-    }
-    .portfolio__sorted button {
-        margin: 0 -0.8%;
-        padding: 2px 7px;
-    }
-    .portfolio__sorted a {
-        font-size: 11px;
-    }
-    .portfolio__gallery {
-        padding-top: 45px;
-    }
-    .view h2 {
-        margin: 61px 0 0 0;
-        padding: 8px;
-        font-size: 14px;
-    }
-    .view p {
-        font-size: 10px;
-        top: -46%;
-    }
-    .our__team__gallery {
-        padding: 40px 0 50px;
-    }
-    blockquote {
-        padding: 75px 10px 0;
-    }
-    blockquote:before {
-        left: 2.5%;
-        top: 53%;
-    }
-    blockquote:after {
-        right: 2.5%;
-        top: 79%;
-    }
-    .quote__author {
-        padding: 15px 33px 47px 0;
-        font-size: 13px;
-    }
-    .services__block {
-        padding: 40px 0;
-    }
-    .services__block li {
-        padding: 25px 10px;
-    }
-    .services__block h3,
-    .services__block li:nth-child(2) h3 {
-        font-size: 17px;
-        padding-top: 33px;
-    }
-    .services__block p {
-        font-size: 11px;
-        padding-top: 16px;
-    }
-    .pricing__main {
-        padding: 40px 0 50px;
-    }
-    .pricing__main li {
-        margin: 0 5.98% 5%;
-    }
-    .pricing__main--features {
-        padding: 20px 30% 0;
-        font-size: 14px;
-        line-height: 30px;
-    }
-    .pricing__main--btn {
-        margin: 40px 9.09% 20px;
-    }
-    .item__description {
-        left: 41px;
-        right: 41px;
-    }
-    #owl-demo .owl-wrapper-outer {
-        padding: 50px 0;
-    }
-    .owl-prev {
-        left: 0;
-        top: -270px;
-    }
-    .owl-next {
-        right: 0;
-        top: -270px;
-    }
-    .our__clients__logo li {
-        width: 49.3%;
-    }
-    .title__h1__contact h1 {
-        font-size: 25px;
-    }
-    .contact__us__form {
-        padding: 50px 0 40px;
-    }
-    .contact__us__form input {
-        width: 77.3%;
-        margin: 3px 0;
-        padding: 10px;
-        font-size: 10px;
-    }
-    .contact__us__form textarea {
-        width: 71.3%;
-    }
-    .contact__us__button {
-        margin: 5px;
-        padding: 10px 44px;
-    }
-    .contact__us__button a {
-        font-size: 11px;
-    }
-    .footer__title {
-        padding: 10px 0 0 0;
-        font-size:16px;
-    }
-    .footer__description {
-        padding-top: 5px;
-        font-size: 9px;
-    }
-    .footer__social {
-        padding-top: 40px;
-    }
-    .footer__copyright {
-        padding-top: 24px;
-        font-size: 9px;
-    }
+	.menu__item {
+		font-size: 8px;
+		padding-right: 2px;
+	}
+	.menu__item:after {
+		margin-left: 5px;
+		width: 3px;
+		height: 3px;
+	}
+	.header__title {
+		font-size: 25px;
+	}
+	svg {
+		width: 13px;
+		height: 20px;
+	}
+	.header__scroll--description {
+		font-size: 7px;
+	}
+	.header__scroll {
+		bottom: 7%;
+	}
+	.owl-page span {
+		margin: 0 3px 3px;
+		width: 5px;
+		height: 5px;
+	}
+	.title__h1 {
+		padding-top: 30px;
+	}
+	h1 {
+		font-size: 25px;
+	}
+	.about__text {
+		padding: 30px 10px;
+		font-size: 14px;
+	}
+	.btn {
+		padding: 0 0 40px;
+	}
+	.btn__text a {
+		font-size: 12px;
+		padding: 10px 20px;
+	}
+	.portfolio__sorted button {
+		margin: 0 -0.8%;
+		padding: 2px 7px;
+	}
+	.portfolio__sorted a {
+		font-size: 11px;
+	}
+	.portfolio__gallery {
+		padding-top: 45px;
+	}
+	.view h2 {
+		margin: 61px 0 0 0;
+		padding: 8px;
+		font-size: 14px;
+	}
+	.view p {
+		font-size: 10px;
+		top: -46%;
+	}
+	.our__team__gallery {
+		padding: 40px 0 50px;
+	}
+	blockquote {
+		padding: 75px 10px 0;
+	}
+	blockquote:before {
+		left: 1%;
+		top: 53%;
+	}
+	blockquote:after {
+		right: 1%;
+		top: 79%;
+	}
+	.quote__author {
+		padding: 15px 33px 47px 0;
+		font-size: 13px;
+	}
+	.services__block {
+		padding: 40px 0;
+	}
+	.services__block li {
+		padding: 25px 10px;
+	}
+	.services__block h3,
+	.services__block li:nth-child(2) h3 {
+		font-size: 17px;
+		padding-top: 33px;
+	}
+	.services__block p {
+		font-size: 11px;
+		padding-top: 16px;
+	}
+	.pricing__main {
+		padding: 40px 0 50px;
+	}
+	.pricing__main li {
+		margin: 0 5.98% 5%;
+	}
+	.pricing__main--features {
+		padding: 20px 30% 0;
+		font-size: 14px;
+		line-height: 30px;
+	}
+	.pricing__main--btn {
+		margin: 40px 9.09% 20px;
+	}
+	.item__description {
+		left: 41px;
+		right: 41px;
+	}
+	#owl-demo .owl-wrapper-outer {
+		padding: 50px 0;
+	}
+	.owl-prev {
+		left: 0;
+		top: -270px;
+	}
+	.owl-next {
+		right: 0;
+		top: -270px;
+	}
+	.our__clients__logo li {
+		width: 49.3%;
+	}
+	.title__h1__contact h1 {
+		font-size: 25px;
+	}
+	.contact__us__form {
+		padding: 50px 0 40px;
+	}
+	.contact__us__form input {
+		width: 77.3%;
+		margin: 3px 0;
+		padding: 10px;
+		font-size: 10px;
+	}
+	.contact__us__form textarea {
+		width: 71.3%;
+	}
+	.contact__us__button {
+		margin: 5px;
+		padding: 10px 44px;
+	}
+	.contact__us__button a {
+		font-size: 11px;
+	}
+	.footer__title {
+		padding: 10px 0 0 0;
+		font-size:16px;
+	}
+	.footer__description {
+		padding-top: 5px;
+		font-size: 9px;
+	}
+	.footer__social {
+		padding-top: 40px;
+	}
+	.footer__copyright {
+		padding-top: 24px;
+		font-size: 9px;
+	}
 }
 
 @media screen and (max-width: 240px) {
 	.header__logo {
-        left: 2%;
-        width: 10%;
-    }
-    .menu__item {
-        font-size: 8px;
-        padding-right: 2px;
-    }
-    .menu__item:after {
-        margin-left: 5px;
-        width: 3px;
-        height: 3px;
-    }
+		left: 2%;
+		width: 10%;
+	}
+	.menu__item {
+		font-size: 8px;
+		padding-right: 2px;
+	}
+	.menu__item:after {
+		margin-left: 5px;
+		width: 3px;
+		height: 3px;
+	}
 	.menu {
 		right: 2%;
 		top: 22%;
@@ -1834,123 +1891,123 @@ input:focus:-ms-input-placeholder      {text-indent: 500px; transition: text-ind
 	.menu li {
 		padding: 0;
 	}
-    .header__title {
-        font-size: 20px;
-    }
-    .header__description {
-        font-size: 10px;
-    }
-    svg {
-        width: 10px;
-        height: 15px;
-    }
-    .header__scroll--description {
-        font-size: 6px;
-    }
-    .header__scroll {
-        bottom: 7%;
-    }
-    .owl-pagination {
-        top: 93%;
-    }
-    h1 {
-        font-size: 20px;
-    }
-    .about__text {
-        font-size: 12px;
-    }
-    .btn__text a {
-        font-size: 9px;
-        padding: 8px 17px;
-    }
-    .portfolio__description {
-        padding-top: 25px;
-    }
-    .portfolio__description p {
-        font-size: 11px;
-    }
-    .portfolio__sorted {
-        padding-top: 35px;
-    }
-    .portfolio__sorted a {
-        font-size: 9px;
-    }
-    .portfolio__sorted button {
-        margin: 0 -0.9%;
-        padding: 2px 5px;
-    }
-    .view h2 {
-        margin: 70px 0 0 0;
-        padding: 6px;
-        font-size: 10px;
-    }
-    .view p {
-        font-size: 8px;
-        top: -78%;
-        white-space: pre-wrap;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        padding: 10px;
-    }
-    .btn:nth-of-type(2) {
-        padding: 25px 0;
-    }
-    .our__team__gallery h3  {
-        font-size: 12px;
-        padding-top: 10px;
-    }
-    .our__team__gallery--foto span {
-        padding-top: 4px;
-        font-size: 12px;
-    }
-    .graph-title {
-        margin-top: 73px;
-        padding-bottom: 30px;
-        font-size: 15px;
-    }
-    .quote__text {
-        font-size: 11px;
-    }
-    blockquote:before {
-        left: 3.5%;
-    }
-    blockquote:after {
-        right: 4.5%;
-    }
-    .services__block li {
-        padding: 15px 5px;
-    }
-    .services__block p {
-        font-size: 10px;
-        line-height: 1.5;
-    }
-    .pricing__main--header {
-        padding: 12px;
-        font-size: 14px;
-    }
-    .pricing__main--features {
-        padding: 20px 57px 0;
-        font-size: 12px;
-        line-height: 20px;
-    }
-    .pricing__main--btn a {
-        padding: 9px 38px;
-        font-size: 11px;
-    }
-    .item__description {
-        left: 4px;
-        right: 4px;
-    }
-    .our__clients__logo li {
-        width: 49%;
-        height: 116px;
-    }
+	.header__title {
+		font-size: 20px;
+	}
+	.header__description {
+		font-size: 10px;
+	}
+	svg {
+		width: 10px;
+		height: 15px;
+	}
+	.header__scroll--description {
+		font-size: 6px;
+	}
+	.header__scroll {
+		bottom: 7%;
+	}
+	.owl-pagination {
+		top: 93%;
+	}
+	h1 {
+		font-size: 20px;
+	}
+	.about__text {
+		font-size: 12px;
+	}
+	.btn__text a {
+		font-size: 9px;
+		padding: 8px 17px;
+	}
+	.portfolio__description {
+		padding-top: 25px;
+	}
+	.portfolio__description p {
+		font-size: 11px;
+	}
+	.portfolio__sorted {
+		padding-top: 35px;
+	}
+	.portfolio__sorted a {
+		font-size: 9px;
+	}
+	.portfolio__sorted button {
+		margin: 0 -0.9%;
+		padding: 2px 5px;
+	}
+	.view h2 {
+		margin: 70px 0 0 0;
+		padding: 6px;
+		font-size: 10px;
+	}
+	.view p {
+		font-size: 8px;
+		top: -78%;
+		white-space: pre-wrap;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		padding: 10px;
+	}
+	.btn:nth-of-type(2) {
+		padding: 25px 0;
+	}
+	.our__team__gallery h3  {
+		font-size: 12px;
+		padding-top: 10px;
+	}
+	.our__team__gallery--foto span {
+		padding-top: 4px;
+		font-size: 12px;
+	}
+	.graph-title {
+		margin-top: 73px;
+		padding-bottom: 30px;
+		font-size: 15px;
+	}
+	.quote__text {
+		font-size: 11px;
+	}
+	blockquote:before {
+		left: 3.5%;
+	}
+	blockquote:after {
+		right: 4.5%;
+	}
+	.services__block li {
+		padding: 15px 5px;
+	}
+	.services__block p {
+		font-size: 10px;
+		line-height: 1.5;
+	}
+	.pricing__main--header {
+		padding: 12px;
+		font-size: 14px;
+	}
+	.pricing__main--features {
+		padding: 20px 57px 0;
+		font-size: 12px;
+		line-height: 20px;
+	}
+	.pricing__main--btn a {
+		padding: 9px 38px;
+		font-size: 11px;
+	}
+	.item__description {
+		left: 4px;
+		right: 4px;
+	}
+	.our__clients__logo li {
+		width: 49%;
+		height: 116px;
+	}
 	.contact__us__form input {
 		width: 78%;
 	}
-    .contact__us__form textarea {
-        width: 69.3%;
-    }
+	.contact__us__form textarea {
+		width: 69.3%;
+	}
 	.scrollToTop {
 		width: 58px;
 		height: 58px;
