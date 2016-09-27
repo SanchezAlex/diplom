@@ -136,7 +136,7 @@ circle {
   animation: scroll 1.5s ease infinite;
 }
 
-@-webkit-keyframes scroll {
+@keyframes scroll {
   0% {
     opacity: 0;
     cy: 481;
