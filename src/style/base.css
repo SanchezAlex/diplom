@@ -10,7 +10,7 @@
 	width: 100%;
 	max-width: 1020px;
 	margin: 0 auto;
-	text-align: center; 
+	text-align: center;
 }
 
 .header {
@@ -129,14 +129,14 @@ circle {
 }
 
 @keyframes scroll {
-  0% { 
+  0% {
     opacity: 0;
     cy: 481;
   }
   33% {
     opacity: 1;
   }
-  100% { 
+  100% {
     opacity: 0;
     cy: 231;
   }
@@ -185,13 +185,12 @@ h1 {
 	text-align: center;
 }
 .btn {
+	display: inline-block;
 	padding-top: 92px;
 	padding-bottom: 119px;
-	text-align: center;
-	position: relative;
 }
 
-.btn__text a{
+.btn__text {
 	display: block;
 	padding: 27px 60px;
 	border: 3px solid #f4c60b;
@@ -204,7 +203,7 @@ h1 {
 	position: relative;
 }
 
-.btn__text a:hover {
+.btn__text:hover {
 	background: rgba(244, 198, 11, 0.75);
 	color: #fff;
 }
@@ -235,7 +234,7 @@ h1 {
 	border-bottom: 1px solid #f4c60b;
 }
 
-.portfolio__sorted a {
+.portfolio__sorted button {
 	color: #000;
 	font-family: Raleway;
 	font-size: 14px;
@@ -415,7 +414,7 @@ h1 {
 
 .our__team__gallery {
 	padding-top: 120px;
-	padding-bottom: 140px;	
+	padding-bottom: 140px;
 }
 
 .our__team__gallery ul {
@@ -528,7 +527,7 @@ blockquote {
 }
 
 blockquote::before{
-	content: "\201C"; 
+	content: "\201C";
 	font-family: Georgia, serif;
 	font-size: 60px;
 	font-weight: bold;
@@ -679,10 +678,10 @@ blockquote::after{
 .pricing__main--btn {
 	background-color: #FFF;
 	margin: 73px 9.09% 20px;
-	
+
 }
 
-.pricing__main--btn a {
+.pricing__main--btn {
 	padding: 20px 55px;
 	display: block;
 	color: #000;
@@ -789,7 +788,7 @@ blockquote::after{
 }
 
 .our__clients__logo {
-	display: inline-block;
+	display: block;
 	width: 100%;
 	padding-top: 116px;
 }
@@ -841,9 +840,9 @@ blockquote::after{
 	margin: 0 auto;
 	padding-top: 100px;
 	padding-bottom: 60px;
-	display: block;
+	display: inline-block;
 }
-	
+
 .contact__us__form input {
 	width: 18.8%;
 	margin: 0 10px;
@@ -859,7 +858,7 @@ blockquote::after{
 
 .contact__us__form textarea {
 	margin-top: 16px;
-	width: 44.4%;
+	width: 46.37%;
 	padding: 20px;
 	height: 220px;
 	border: 3px solid white;
@@ -871,7 +870,7 @@ blockquote::after{
 
 .contact__us__button {
 	margin-top: 11px;
-    margin-right: 33.4%;
+    margin-right: 33.8%;
     padding: 20px 52px;
     background-color: #f4c60b;
 }
@@ -895,7 +894,7 @@ input:focus:-ms-input-placeholder      {text-indent: 500px; transition: text-ind
 
 
 .footer {
-	background-color: #303030;	
+	background-color: #303030;
 }
 
 .footer__logo {
@@ -1045,7 +1044,7 @@ input:focus:-ms-input-placeholder      {text-indent: 500px; transition: text-ind
 	.btn {
 		padding: 50px 0;
 	}
-	.btn__text a {
+	.btn__text {
 		padding: 20px 40px;
 	}
 	.our__clients__logo li {
@@ -1087,7 +1086,7 @@ input:focus:-ms-input-placeholder      {text-indent: 500px; transition: text-ind
 		width: 24.7%;
 	}
 	.contact__us__form textarea {
-		width: 45.1%;
+		width: 46%;
 	}
 }
 
@@ -1131,7 +1130,7 @@ input:focus:-ms-input-placeholder      {text-indent: 500px; transition: text-ind
 	.about__text {
 		padding: 50px 20px;
 	}
-	.btn__text a {
+	.btn__text {
 		padding: 15px 30px;
 		font-size: 20px;
 	}
@@ -1221,7 +1220,7 @@ input:focus:-ms-input-placeholder      {text-indent: 500px; transition: text-ind
 		width: 47%;
 	}
 	.contact__us__button {
-		margin-right: 32.4%;
+		margin-right: 34%;
 	}
 }
 
@@ -1325,7 +1324,7 @@ input:focus:-ms-input-placeholder      {text-indent: 500px; transition: text-ind
 		width: 48.9%;
 	}
 	.contact__us__button {
-		margin-right: 31.4%;
+		margin-right: 33.4%;
 	}
 }
 
@@ -1376,7 +1375,7 @@ input:focus:-ms-input-placeholder      {text-indent: 500px; transition: text-ind
 		width: 50.9%;
 	}
 	.contact__us__button {
-		margin-right: 30%;
+		margin-right: 32%;
 	}
 }
 
@@ -1406,7 +1405,7 @@ input:focus:-ms-input-placeholder      {text-indent: 500px; transition: text-ind
 		font-size: 15px;
 		line-height: 1.6;
 	}
-	.btn__text a {
+	.btn__text {
 		font-size: 14px;
 		padding: 12px 24px;
 	}
@@ -1743,7 +1742,7 @@ input:focus:-ms-input-placeholder      {text-indent: 500px; transition: text-ind
 	.btn {
 		padding: 0 0 40px;
 	}
-	.btn__text a {
+	.btn__text {
 		font-size: 12px;
 		padding: 10px 20px;
 	}
@@ -1916,7 +1915,7 @@ input:focus:-ms-input-placeholder      {text-indent: 500px; transition: text-ind
 	.about__text {
 		font-size: 12px;
 	}
-	.btn__text a {
+	.btn__text {
 		font-size: 9px;
 		padding: 8px 17px;
 	}

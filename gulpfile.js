@@ -75,11 +75,11 @@ gulp.task('concat-js', function() {
 
 gulp.task('minify-img', function() {
     gulp.src('./src/img/**')
-        .pipe(newer('src'))
+        .pipe(newer('./build/img'))
         .pipe(imagemin())
         .pipe(gulp.dest('./build/img'));
     gulp.src('./src/pic/**')
-        .pipe(newer('src'))
+        .pipe(newer('./build/pic'))
         .pipe(imagemin())
         .pipe(gulp.dest('./build/pic'));
 });
